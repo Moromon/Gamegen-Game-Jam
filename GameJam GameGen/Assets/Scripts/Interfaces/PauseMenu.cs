@@ -53,7 +53,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        if (!notebook.activeSelf)
+        if (!notebook.activeSelf && !GameManager.onDialogue)
         {
             GameManager.onMenu = false;
             Cursor.lockState = CursorLockMode.Locked;
