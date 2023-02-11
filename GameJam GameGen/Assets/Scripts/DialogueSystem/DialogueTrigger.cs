@@ -7,9 +7,10 @@ public class DialogueTrigger : MonoBehaviour
     // Start is called before the first frame update
     public Dialogue dialogue;
 
-    public void TriggerDialogue()
+    public void TriggerDialogue(PersonajePrueba personaje)
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, personaje);
+        GameManager.onDialogue = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

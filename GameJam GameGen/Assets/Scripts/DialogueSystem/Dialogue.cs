@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue
 {
-    // Start is called before the first frame update
     public string characterName;
     [TextArea(3,10)]
     public string[] sentences;
+    public string[] sentencesEscopeta;
     
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour,IObserver<int>
     public PersonajePrueba[] personajes;
 
     public static bool onMenu= false;
+    public static bool onDialogue = false;
     private void Awake()
     {
         for(int i = 0; i < intObjects.Length; i++)
@@ -32,13 +33,13 @@ public class GameManager : MonoBehaviour,IObserver<int>
     {
         intObjects[data].investigado = true;
         updateCharacter(intObjects[data].nameObj);
-        intObjects[data].preview.SetActive(true);
+        //intObjects[data].preview.SetActive(true);
     }
 
     public void updateCharacter(string s)
     {
         for(int i =0; i<personajes.Length;i++) {
-            personajes[i].updated(s);
+            personajes[i].Updated(s);
         }
     }
 }

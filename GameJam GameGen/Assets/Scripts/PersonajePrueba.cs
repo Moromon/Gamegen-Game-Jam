@@ -18,20 +18,21 @@ public class PersonajePrueba : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            talk();
+            Talk();
         }
     }
 
-    private void talk()
+    private void Talk()
     {
         //Activar ui
-        trigger.TriggerDialogue();
         if (pistolaInvestigada)
         {
-            Debug.Log("pium");
+            
         }
+        trigger.TriggerDialogue(this);
+        
     }
-    public void updated(string s)
+    public void Updated(string s)
     {
         switch (s)
         {

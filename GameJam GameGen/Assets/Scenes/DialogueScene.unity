@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 200314946}
   - component: {fileID: 200314945}
   - component: {fileID: 200314949}
+  - component: {fileID: 200314950}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -400,6 +401,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pistolaInvestigada: 0
+  trigger: {fileID: 200314950}
+--- !u!114 &200314950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200314944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    characterName: Char 1
+    sentences:
+    - hola soy el char1 donquijote de la parrilla
+    - y me voy a rascar la rodilla
+    - con un poco de mantequilla
 --- !u!1 &377008245
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +555,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377008245}
   m_CullTransparentMesh: 1
+--- !u!1 &476833773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476833775}
+  - component: {fileID: 476833774}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &476833774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476833773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68e42d514934c7479b99f05396cc2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &476833775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476833773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643379832
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +713,7 @@ MonoBehaviour:
   id: 0
   description: Esto es una pistola
   investigado: 0
-  prefab: {fileID: 0}
+  preview: {fileID: 0}
 --- !u!1 &701952668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1172,7 @@ GameObject:
   - component: {fileID: 1113954496}
   - component: {fileID: 1113954495}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1414,7 +1478,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1210818560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476833774}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210818560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,7 +1809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 701952668}
   optionsMenu: {fileID: 701952668}
-  gamePaused: 0
+  notebook: {fileID: 0}
 --- !u!4 &1889661518
 Transform:
   m_ObjectHideFlags: 0
