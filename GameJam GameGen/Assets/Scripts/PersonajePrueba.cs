@@ -5,8 +5,10 @@ public class PersonajePrueba : MonoBehaviour
     public bool pistolaInvestigada = false;
     public DialogueTrigger trigger;
 
+    private GameObject _player;
     private void Start()
     {
+        _player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -18,7 +20,12 @@ public class PersonajePrueba : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Talk();
+            Vector3 a = new Vector3(transform.position.x, 0, transform.position.z);
+            Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
+            if (Vector3.Distance(a, b) < 4f)
+            {
+                Talk();
+            }
         }
     }
 
