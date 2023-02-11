@@ -21,14 +21,19 @@ public class FirstPersonCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float inputX = Input.GetAxis("Mouse X")*mouseSense*Time.deltaTime;
-        float inputY = Input.GetAxis("Mouse Y")*mouseSense*Time.deltaTime;
+        if (!GameManager.onMenu)
+        {
 
-        cameraVerticalRotation -= inputY;
-        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f,90f);  
 
-        transform.localRotation =Quaternion.Euler(cameraVerticalRotation,0f,0f);
+            float inputX = Input.GetAxis("Mouse X") * mouseSense * Time.deltaTime;
+            float inputY = Input.GetAxis("Mouse Y") * mouseSense * Time.deltaTime;
 
-        player.Rotate(Vector3.up * inputX);
+            cameraVerticalRotation -= inputY;
+            cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
+
+            transform.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
+
+            player.Rotate(Vector3.up * inputX);
+        }
     }
 }

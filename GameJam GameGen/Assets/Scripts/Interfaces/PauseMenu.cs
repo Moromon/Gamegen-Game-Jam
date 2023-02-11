@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject optionsMenu;
-    public bool gamePaused = false;
+    public GameObject notebook;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            if (gamePaused && !optionsMenu.activeSelf)
+            if (!optionsMenu.activeSelf &&GameManager.onMenu && pauseMenu.activeSelf)
             {
                 ResumeGame();
             }
@@ -30,7 +31,14 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 PauseGame();
+                Cursor.lockState = CursorLockMode.None;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.J) && !GameManager.onMenu)
+        {
+            notebook.SetActive(!notebook.activeSelf);
+            GameManager.onMenu = notebook.activeSelf;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -38,14 +46,19 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        gamePaused = true;
+        GameManager.onMenu = true;
     }
 
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        gamePaused = false;
+        if (!notebook.activeSelf)
+        {
+            GameManager.onMenu = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
     }
 
     public void QuitGame()
@@ -64,5 +77,11 @@ public class PauseMenu : MonoBehaviour
     {
        pauseMenu.SetActive(true);
        optionsMenu.SetActive(false); 
+    }
+    public void exitNotebook()
+    {
+       notebook.SetActive(false);
+       GameManager.onMenu= false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

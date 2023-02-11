@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour,IObserver<int>
 
     public PersonajePrueba[] personajes;
 
+    public static bool onMenu= false;
     private void Awake()
     {
         for(int i = 0; i < intObjects.Length; i++)
