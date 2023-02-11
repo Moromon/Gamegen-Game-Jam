@@ -3,6 +3,7 @@ using UnityEngine;
 public class PersonajePrueba : MonoBehaviour
 {
     public bool pistolaInvestigada = false;
+    public DialogueTrigger trigger;
 
     private void Start()
     {
@@ -24,7 +25,7 @@ public class PersonajePrueba : MonoBehaviour
     private void talk()
     {
         //Activar ui
-        Debug.Log("Hablo");
+        trigger.TriggerDialogue();
         if (pistolaInvestigada)
         {
             Debug.Log("pium");
