@@ -10,12 +10,11 @@ public class FirstPersonCamera : MonoBehaviour
     public float mouseSense = 2f;
     private float cameraVerticalRotation = 0f;
 
-    private bool lockCursor = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible= false;
+  
         Cursor.lockState = CursorLockMode.Locked;
     }
 
