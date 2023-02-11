@@ -10,7 +10,7 @@ public class IntObject : MonoBehaviour,ISubject<int>
     [TextArea(10, 15)]
     public string description = "";
     public bool investigado;
-    public GameObject prefab;
+    public GameObject preview;
 
 
     private List<IObserver<int>> _observers = new List<IObserver<int>>();
@@ -36,9 +36,7 @@ public class IntObject : MonoBehaviour,ISubject<int>
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.LogWarning("Añadir recoger objeto y que aparezca por pantalla");
             NotifyObservers();
-
         }
     }
 }

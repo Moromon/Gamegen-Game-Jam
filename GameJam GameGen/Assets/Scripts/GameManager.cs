@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour,IObserver<int>
     {
         intObjects[data].investigado = true;
         updateCharacter(intObjects[data].nameObj);
+        intObjects[data].preview.SetActive(true);
     }
 
     public void updateCharacter(string s)
