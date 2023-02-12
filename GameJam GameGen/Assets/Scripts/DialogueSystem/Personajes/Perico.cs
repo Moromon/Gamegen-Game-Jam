@@ -17,6 +17,9 @@ public class Perico : PersonajePrueba
             case "pistola":
                 pistolaInvestigada = true;
                 break;
+            case "pist":
+                wherePistola = true;
+                break;
             default: break;
         }
     }

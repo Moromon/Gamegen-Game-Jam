@@ -1,4 +1,6 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
 {
@@ -28,6 +30,22 @@ public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
     private GameObject _player;
 
     bool IPersonaje.PistolaInvestigada { get => pistolaInvestigada; set => pistolaInvestigada = value; }
+    bool IPersonaje.wherePistola { get => wherePistola; set => wherePistola = value; }
+    bool IPersonaje.crucifijoInvestigado { get => crucifijoInvestigado; set => crucifijoInvestigado = value; }
+    bool IPersonaje.sogaInvestigada { get => sogaInvestigada; set => sogaInvestigada = value; }
+    bool IPersonaje.missingCuchillo { get => missingCuchillo; set => missingCuchillo = value; }
+    bool IPersonaje.moratonJuanInvestigado { get => moratonJuanInvestigado; set => moratonJuanInvestigado = value; }
+    bool IPersonaje.narizRotaPedroInvestigada { get => narizRotaPedroInvestigada; set => narizRotaPedroInvestigada = value; }
+    bool IPersonaje.nudillosMiguelAInvestigados { get => nudillosMiguelAInvestigados; set => nudillosMiguelAInvestigados = value; }
+    bool IPersonaje.heridaJoseManuel { get => heridaJoseManuel; set => heridaJoseManuel = value; }
+    bool IPersonaje.horaMimirEstandar { get => horaMimirEstandar; set => horaMimirEstandar = value; }
+    bool IPersonaje.horaMimirAna { get => horaMimirAna; set => horaMimirAna = value; }
+    bool IPersonaje.horaMimirJoseManuel { get => horaMimirJoseManuel; set => horaMimirJoseManuel = value; }
+    bool IPersonaje.anaTestigoJoseManuel { get => anaTestigoJoseManuel; set => anaTestigoJoseManuel = value; }
+    bool IPersonaje.anaTestigoMiguelA { get => anaTestigoMiguelA; set => anaTestigoMiguelA = value; }
+    bool IPersonaje.apareceJoseManuel { get => apareceJoseManuel; set => apareceJoseManuel = value; }
+    bool IPersonaje.joseCatalinaParranda { get => joseCatalinaParranda; set => joseCatalinaParranda = value; }
+    bool IPersonaje.pedroLlamo { get => pedroLlamo; set => pedroLlamo = value; }
 
     private void Start()
     {
