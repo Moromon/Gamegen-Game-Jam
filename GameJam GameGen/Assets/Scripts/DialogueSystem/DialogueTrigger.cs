@@ -7,7 +7,7 @@ public class DialogueTrigger : MonoBehaviour
     // Start is called before the first frame update
     public Dialogue dialogue;
 
-    public void TriggerDialogue(PersonajePrueba personaje)
+    public void TriggerDialogue(IPersonaje personaje)
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, personaje);
         GameManager.onDialogue = true;

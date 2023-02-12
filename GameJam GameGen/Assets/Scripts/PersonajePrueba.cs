@@ -1,11 +1,34 @@
 using UnityEngine;
 
-public class PersonajePrueba : MonoBehaviour
+public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
 {
-    public bool pistolaInvestigada = false;
+    protected bool pistolaInvestigada = false;
+    protected bool wherePistola = false;
+    protected bool crucifijoInvestigado = false;
+    protected bool sogaInvestigada = false;
+    protected bool missingCuchillo = false;
+
+    protected bool moratonJuanInvestigado = false;
+    protected bool narizRotaPedroInvestigada = false;
+    protected bool nudillosMiguelAInvestigados = false;
+    protected bool heridaJoseManuel = false;
+
+    protected bool horaMimirEstandar = false;
+    protected bool horaMimirAna = false;
+    protected bool horaMimirJoseManuel = false;
+
+    protected bool anaTestigoJoseManuel = false;
+    protected bool anaTestigoMiguelA = false;
+    protected bool apareceJoseManuel = false;
+    protected bool joseCatalinaParranda = false;
+    protected bool pedroLlamo = false;
+
     public DialogueTrigger trigger;
 
     private GameObject _player;
+
+    bool IPersonaje.PistolaInvestigada { get => pistolaInvestigada; set => pistolaInvestigada = value; }
+
     private void Start()
     {
         _player = GameObject.Find("Player");
@@ -16,7 +39,7 @@ public class PersonajePrueba : MonoBehaviour
     {
     }
 
-    private void OnMouseOver()
+    protected void OnMouseOver()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -29,24 +52,8 @@ public class PersonajePrueba : MonoBehaviour
         }
     }
 
-    private void Talk()
-    {
-        //Activar ui
-        if (pistolaInvestigada)
-        {
-            
-        }
-        trigger.TriggerDialogue(this);
-        
-    }
-    public void Updated(string s)
-    {
-        switch (s)
-        {
-            case "pistola":
-                pistolaInvestigada=true;
-                break;
-            default: break;
-        }
-    }
+    public abstract void Talk();
+
+    public abstract void Updated(string s);
+    
 }

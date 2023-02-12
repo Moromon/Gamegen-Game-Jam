@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialogueBox;
-    private PersonajePrueba _personaje;
+    private IPersonaje _personaje;
     private Dialogue _dialogue;
 
     private TextMeshProUGUI _opcionArma;
@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue, PersonajePrueba personaje)
+    public void StartDialogue(Dialogue dialogue, IPersonaje personaje)
     {
         _dialogue = dialogue;
         _personaje = personaje;
@@ -81,7 +81,7 @@ public class DialogueManager : MonoBehaviour
 
         if(sentences.Count == 0)
         {
-            if (_personaje.pistolaInvestigada)
+            if (_personaje.PistolaInvestigada)
             {
                 _opcionArma.gameObject.SetActive(true);
                 _infoOpciones.gameObject.SetActive(true);
