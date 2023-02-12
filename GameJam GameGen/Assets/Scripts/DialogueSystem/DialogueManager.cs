@@ -58,6 +58,9 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    private int _cuenta = 0;
+    private int[] _turnos;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -79,6 +82,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -87,6 +91,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -95,6 +100,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -103,6 +109,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -111,6 +118,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -119,6 +127,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesEscopeta;
+                _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
             _armaActivada = false;
@@ -132,6 +141,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -140,6 +150,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -148,6 +159,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -156,6 +168,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -164,6 +177,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -172,6 +186,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentecesPistola;
+                _turnos = _dialogue.turnosPistola;
                 written = true;
             }
             _wherePistola = false;
@@ -185,6 +200,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -193,6 +209,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -201,6 +218,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -209,6 +227,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -217,6 +236,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -225,6 +245,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesCrucifijo;
+                _turnos = _dialogue.turnosCrucifijo;
                 written = true;
             }
             _crucifijoActivado = false;
@@ -238,6 +259,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -246,6 +268,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -254,6 +277,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -262,6 +286,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -270,6 +295,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -278,6 +304,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesSoga;
+                _turnos = _dialogue.turnosSoga;
                 written = true;
             }
             _sogaActivada = false;
@@ -291,6 +318,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -299,6 +327,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -307,6 +336,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -315,6 +345,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -323,6 +354,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -331,6 +363,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesCuchillo;
+                _turnos = _dialogue.turnosCuchillo;
                 written = true;
             }
             _missingCuchillo = false;
@@ -344,6 +377,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -352,6 +386,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -360,6 +395,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -368,6 +404,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -376,6 +413,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -384,6 +422,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesMoraton;
+                _turnos = _dialogue.turnosMoraton;
                 written = true;
             }
             _moratonJuanActivado = false;
@@ -397,6 +436,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -405,6 +445,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -413,6 +454,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -421,6 +463,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -429,6 +472,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -437,6 +481,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesNarizRota;
+                _turnos = _dialogue.turnosNarizRota;
                 written = true;
             }
             _narizRotaPedroActivado = false;
@@ -450,6 +495,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -458,6 +504,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -466,6 +513,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -474,6 +522,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -482,6 +531,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -490,6 +540,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesNudillos;
+                _turnos = _dialogue.turnosNudillos;
                 written = true;
             }
             _nudillosMiguelAActivado = false;
@@ -503,6 +554,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -511,6 +563,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -519,6 +572,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -527,6 +581,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -535,6 +590,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -543,6 +599,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesHerida;
+                _turnos = _dialogue.turnosHerida;
                 written = true;
             }
             _heridaJoseManuelActivado = false;
@@ -556,6 +613,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -564,6 +622,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -572,6 +631,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -580,6 +640,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -588,6 +649,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -596,63 +658,12 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesHoraEstandar;
+                _turnos = _dialogue.turnosHoraEstandar;
                 written = true;
             }
             _horaMimirEstandarActivado = false;
         }
-        if (_horaMimirEstandarActivado)
-        {
-            bool written = false;
-            if (!bto1onUse)
-            {
-                bto1.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto1onUse = true;
-                bto1.gameObject.SetActive(true);
-                _dButton1 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            else if (!bto2onUse && !written)
-            {
-                bto2.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto2onUse = true;
-                bto2.gameObject.SetActive(true);
-                _dButton2 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            else if (!bto3onUse && !written)
-            {
-                bto3.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto3onUse = true;
-                bto3.gameObject.SetActive(true);
-                _dButton3 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            else if (!bto4onUse && !written)
-            {
-                bto4.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto4onUse = true;
-                bto4.gameObject.SetActive(true);
-                _dButton4 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            else if (!bto5onUse && !written)
-            {
-                bto5.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto5onUse = true;
-                bto5.gameObject.SetActive(true);
-                _dButton5 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            else if (!bto6onUse && !written)
-            {
-                bto6.GetComponentInChildren<TextMeshProUGUI>().text = "Hora Dormir";
-                bto6onUse = true;
-                bto6.gameObject.SetActive(true);
-                _dButton6 = _dialogue.sentencesHoraEstandar;
-                written = true;
-            }
-            _horaMimirEstandarActivado = false;
-        }
+        
         if (_horaMimirAnaActivado)
         {
             bool written = false;
@@ -662,6 +673,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -670,6 +682,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -678,6 +691,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -686,6 +700,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -694,6 +709,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -702,6 +718,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesHoraAna;
+                _turnos = _dialogue.turnosHoraAna;
                 written = true;
             }
             _horaMimirAnaActivado = false;
@@ -715,6 +732,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -723,6 +741,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -731,6 +750,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -739,6 +759,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -747,6 +768,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -755,6 +777,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesHoraJoseManuel;
+                _turnos = _dialogue.turnosHoraJoseManuel;
                 written = true;
             }
             _horaMimirJoseManuelActivado = false;
@@ -768,6 +791,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -776,6 +800,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -784,6 +809,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -792,6 +818,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -800,6 +827,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -808,6 +836,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesAnaTestigoJoseManuel;
+                _turnos = _dialogue.turnosAnaTestigoJoseManuel;
                 written = true;
             }
             _anaTestigoJoseManuelActivado = false;
@@ -821,6 +850,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -829,6 +859,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -837,6 +868,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -845,6 +877,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -853,6 +886,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -861,6 +895,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesAnaTestigoMiguel;
+                _turnos = _dialogue.turnosAnaTestigoMiguel;
                 written = true;
             }
             _anaTestigoMiguelAActivado = false;
@@ -874,6 +909,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -882,6 +918,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -890,6 +927,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -898,6 +936,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -906,6 +945,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -914,6 +954,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesApareceJoseManuel;
+                _turnos = _dialogue.turnosApareceJoseManuel;
                 written = true;
             }
             _apareceJoseManuelActivado = false;
@@ -927,6 +968,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -935,6 +977,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -943,6 +986,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -951,6 +995,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -959,6 +1004,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -967,6 +1013,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesJoseCatalinaParranda;
+                _turnos = _dialogue.turnosJoseCatalinaParranda;
                 written = true;
             }
             _joseCatalinaParrandaActivado = false;
@@ -980,6 +1027,7 @@ public class DialogueManager : MonoBehaviour
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             else if (!bto2onUse && !written)
@@ -988,6 +1036,7 @@ public class DialogueManager : MonoBehaviour
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             else if (!bto3onUse && !written)
@@ -996,6 +1045,7 @@ public class DialogueManager : MonoBehaviour
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             else if (!bto4onUse && !written)
@@ -1004,6 +1054,7 @@ public class DialogueManager : MonoBehaviour
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             else if (!bto5onUse && !written)
@@ -1012,6 +1063,7 @@ public class DialogueManager : MonoBehaviour
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             else if (!bto6onUse && !written)
@@ -1020,6 +1072,7 @@ public class DialogueManager : MonoBehaviour
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesPedroLlamo;
+                _turnos = _dialogue.turnosPedroLlamo;
                 written = true;
             }
             _pedroLLamoActivado = false;
@@ -1031,9 +1084,9 @@ public class DialogueManager : MonoBehaviour
     {
         _dialogue = dialogue;
         _personaje = personaje;
+        _turnos = dialogue.turnosBasic;
         dialogueBox.SetActive(true);
-        nameText.text = dialogue.characterName;
-
+        nameText.text = dialogue.charactersNames[_turnos[0]];
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -1048,18 +1101,23 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            _cuenta = 0;
             EndDialogue();
             //_opcionArma.gameObject.SetActive(false);
             //_infoOpciones.gameObject.SetActive(false);
             //_armaActivada = false;
             return;
         }
-
+        
+        
         string sentence = sentences.Dequeue();
+        _cuenta++;
+        nameText.text = _dialogue.charactersNames[_turnos[_cuenta-1]];
         dialogueText.text = sentence;
 
         if (sentences.Count == 0)
         {
+            _cuenta = 0;
             #region Muchos ifs
 
             if (_personaje.PistolaInvestigada)

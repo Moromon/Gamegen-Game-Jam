@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2916,34 +2916,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterName: Perico
+    charactersNames:
+    - Perico
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
     sentences:
-    - hola soy perico
-    - tengo miedo
-    - josecarlos ha matado a juan
+    - "hola, soy el inspector prieto, y este es mi compa\xF1ero el forense mart\xEDnez"
+    - hola, soy el forense martinez
+    - hola, yo soy don perico de los palotes
+    - mato usted a juan don perico?
+    - "no se\xF1or prieto, yo no mate a juan"
+    - esta usted seguro don perico?
+    - "si se\xF1or martinez, lo estoy"
+    turnosBasic: 01000000020000000000000001000000000000000200000000000000
     sentencesEscopeta:
-    - ay no
+    - Es esta escopeta suya don perico?
     - encontraste la escoputa de escoputear
     - tienes razon, yo soy buron
     - yo mate con la escoputa de escoputear a juan carlos el de cuarto
+    turnosEscopeta: 01000000000000000000000000000000
     sentecesPistola:
-    - si
-    - 'eso es '
+    - conoce usted esta pistola don perico?
+    - no, pero tal vez don jose sepa de quien es
+    - y quien es don jose?
+    - me dijo que por su casa el paso ayer
+    - de acuerdo, adios don perico
+    - adios don jose
+    turnosPistola: 010000000000000002000000000000000100000000000000
     sentencesCrucifijo: []
+    turnosCrucifijo: 
     sentencesSoga: []
+    turnosSoga: 
     sentencesCuchillo: []
+    turnosCuchillo: 
     sentencesMoraton: []
+    turnosMoraton: 
     sentencesNarizRota: []
+    turnosNarizRota: 
     sentencesNudillos: []
+    turnosNudillos: 
     sentencesHerida: []
+    turnosHerida: 
     sentencesHoraEstandar: []
+    turnosHoraEstandar: 
     sentencesHoraAna: []
+    turnosHoraAna: 
     sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
     sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
     sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
     sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
     sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
     sentencesPedroLlamo: []
+    turnosPedroLlamo: 
 --- !u!114 &200314951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18532,28 +18561,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterName: Timoteo
+    charactersNames: []
     sentences:
     - hola soy Timoteo Pinheiro
     - tengo miedo pero menos que perico
     - yo creo que es perico el que ha matado a juan
+    turnosBasic: 
     sentencesEscopeta: []
+    turnosEscopeta: 
     sentecesPistola: []
+    turnosPistola: 
     sentencesCrucifijo: []
+    turnosCrucifijo: 
     sentencesSoga: []
+    turnosSoga: 
     sentencesCuchillo: []
+    turnosCuchillo: 
     sentencesMoraton: []
+    turnosMoraton: 
     sentencesNarizRota: []
+    turnosNarizRota: 
     sentencesNudillos: []
+    turnosNudillos: 
     sentencesHerida: []
+    turnosHerida: 
     sentencesHoraEstandar: []
+    turnosHoraEstandar: 
     sentencesHoraAna: []
+    turnosHoraAna: 
     sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
     sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
     sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
     sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
     sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
     sentencesPedroLlamo: []
+    turnosPedroLlamo: 
 --- !u!65 &1730441643
 BoxCollider:
   m_ObjectHideFlags: 0
