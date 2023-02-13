@@ -61,6 +61,4 @@ public class Dialogue
     [TextArea(3, 10)]
     public string[] sentencesPedroLlamo;
     public int[] turnosPedroLlamo;
-
-
 }

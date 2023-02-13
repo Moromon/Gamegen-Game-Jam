@@ -14,11 +14,14 @@ public class Perico : PersonajePrueba
     {
         switch (s)
         {
-            case "pistola":
+            case "Pistola":
                 pistolaInvestigada = true;
                 break;
-            case "pist":
+            case "wherePistola":
                 wherePistola = true;
+                break;
+            case "Moraton":
+                moratonJuanInvestigado = true;
                 break;
             default: break;
         }

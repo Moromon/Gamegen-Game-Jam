@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntObject : MonoBehaviour, ISubject<int>
+public class IntObject : PersonajePrueba, ISubject<int>
 {
     public string nameObj;
     public int id;
@@ -10,14 +10,6 @@ public class IntObject : MonoBehaviour, ISubject<int>
     public string description = "";
 
     public bool investigado;
-    public GameObject preview;
-
-    private GameObject _player;
-
-    public void Start()
-    {
-        _player = GameObject.Find("Player");
-    }
 
     private List<IObserver<int>> _observers = new List<IObserver<int>>();
 
@@ -39,17 +31,28 @@ public class IntObject : MonoBehaviour, ISubject<int>
         _observers.Remove(observer);
     }
 
-    private void OnMouseOver()
+    //private void OnMouseOver()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.F))
+    //    {
+    //        Vector3 a = new Vector3(transform.position.x, 0, transform.position.z);
+    //        Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
+    //        if (Vector3.Distance(a, b) < 3f)
+    //        {
+    //            Debug.Log("in range");
+    //            NotifyObservers();
+    //        }
+    //    }
+    //}
+
+    public override void Talk()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Vector3 a = new Vector3(transform.position.x, 0, transform.position.z);
-            Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
-            if (Vector3.Distance(a, b) < 3f)
-            {
-                Debug.Log("in range");
-                NotifyObservers();
-            }
-        }
+        NotifyObservers();
+        trigger.TriggerDialogue(this);
+    }
+
+    public override void Updated(string s)
+    {
+        
     }
 }

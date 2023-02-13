@@ -11,11 +11,13 @@ public class DialogueManager : MonoBehaviour
     private IPersonaje _personaje;
     private Dialogue _dialogue;
 
+    public Button continueButton;
+
     private TextMeshProUGUI _opcionArma;
 
     private TextMeshProUGUI _infoOpciones;
 
-    private bool _armaActivada = false;
+    private bool __pistolaInvestigada = false;
     private bool _wherePistola = false;
     private bool _crucifijoActivado = false;
     private bool _sogaActivada = false;
@@ -35,7 +37,6 @@ public class DialogueManager : MonoBehaviour
 
     //Testeo
     public Button bto1;
-
     public Button bto2;
     public Button bto3;
     public Button bto4;
@@ -60,10 +61,13 @@ public class DialogueManager : MonoBehaviour
 
     private int _cuenta = 0;
     private int[] _turnos;
+    private GameManager _gameManager;
 
     // Start is called before the first frame update
     private void Start()
     {
+        
+        _gameManager= GameObject.Find("GameManager").GetComponent<GameManager>();
         dialogueBox.SetActive(false);
         sentences = new Queue<string>();
         _infoOpciones = dialogueBox.transform.GetChild(6).GetComponent<TextMeshProUGUI>();
@@ -73,7 +77,7 @@ public class DialogueManager : MonoBehaviour
     private void Update()
     {
         #region terrorismo
-        if (_armaActivada)
+        if (__pistolaInvestigada)
         {
             bool written = false;
             if (!bto1onUse)
@@ -130,7 +134,7 @@ public class DialogueManager : MonoBehaviour
                 _turnos = _dialogue.turnosEscopeta;
                 written = true;
             }
-            _armaActivada = false;
+            __pistolaInvestigada = false;
         }
         if (_wherePistola)
         {
@@ -1101,6 +1105,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+
             _cuenta = 0;
             EndDialogue();
             //_opcionArma.gameObject.SetActive(false);
@@ -1108,8 +1113,8 @@ public class DialogueManager : MonoBehaviour
             //_armaActivada = false;
             return;
         }
-        
-        
+
+        continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Continuar";
         string sentence = sentences.Dequeue();
         _cuenta++;
         nameText.text = _dialogue.charactersNames[_turnos[_cuenta-1]];
@@ -1117,6 +1122,7 @@ public class DialogueManager : MonoBehaviour
 
         if (sentences.Count == 0)
         {
+            continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Salir";
             _cuenta = 0;
             #region Muchos ifs
 
@@ -1124,7 +1130,7 @@ public class DialogueManager : MonoBehaviour
             {
                 //_opcionArma.gameObject.SetActive(true);
                 //_infoOpciones.gameObject.SetActive(true);
-                _armaActivada = true;
+                __pistolaInvestigada = true;
             }
             if (_personaje.wherePistola)
             {
@@ -1212,6 +1218,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto1.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
     }
@@ -1222,9 +1229,9 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto2.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
-        ;
     }
 
     public void button3()
@@ -1233,6 +1240,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto3.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
     }
@@ -1243,6 +1251,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto4.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
     }
@@ -1253,6 +1262,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto5.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
     }
@@ -1263,6 +1273,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        UpdateCharBools(bto6.GetComponentInChildren<TextMeshProUGUI>().text);
         DisplayNextSentence();
         Reset();
     }
@@ -1283,5 +1294,17 @@ public class DialogueManager : MonoBehaviour
         bto5.gameObject.SetActive(false);
         bto6onUse = false;
         bto6.gameObject.SetActive(false);
+    }
+
+    public void UpdateCharBools(string s)
+    {
+        switch (s)
+        {
+            case "Pistola":
+                _gameManager.updateCharacter("Moraton");
+                break;
+            default:
+                break;
+        }
     }
 }

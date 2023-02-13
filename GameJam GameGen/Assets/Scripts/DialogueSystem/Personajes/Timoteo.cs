@@ -15,7 +15,9 @@ namespace Assets.Scripts.DialogueSystem.Personajes
         {
             switch (s)
             {
-                
+                case "Moraton":
+                    moratonJuanInvestigado = true;
+                    break;
                 default: break;
             }
         }

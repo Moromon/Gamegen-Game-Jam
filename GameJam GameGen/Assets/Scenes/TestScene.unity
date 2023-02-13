@@ -2949,8 +2949,12 @@ MonoBehaviour:
     turnosSoga: 
     sentencesCuchillo: []
     turnosCuchillo: 
-    sentencesMoraton: []
-    turnosMoraton: 
+    sentencesMoraton:
+    - "Y ese morat\xF3n, Perico?"
+    - "No te lo har\xEDa Juan con la pistola?"
+    - eso eso
+    - No inspector, fui yo que me cai por las escaleras
+    turnosMoraton: 02000000010000000200000000000000
     sentencesNarizRota: []
     turnosNarizRota: 
     sentencesNudillos: []
@@ -5836,7 +5840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6943,6 +6947,7 @@ GameObject:
   - component: {fileID: 643379834}
   - component: {fileID: 643379833}
   - component: {fileID: 643379837}
+  - component: {fileID: 643379838}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -7040,11 +7045,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameObj: pistola
+  trigger: {fileID: 643379838}
+  nameObj: Pistola
   id: 0
   description: Esto es una pistola
   investigado: 0
-  preview: {fileID: 960660580}
+--- !u!114 &643379838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643379832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentences:
+    - "Que opinas de esta pistola Mart\xEDnez?"
+    - Es una pipa to guapa la verdad, tiene pinta de que el que la usa controla
+    - Tienes to la razon enverda, esta flama
+    - '*nods*'
+    turnosBasic: 01000000020000000100000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
 --- !u!1 &653560791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10269,7 +10331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: Opciones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13672,7 +13734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Resume
+  m_text: 'Continuar
 
 '
   m_isRightToLeft: 0
@@ -15684,6 +15746,7 @@ MonoBehaviour:
   nameText: {fileID: 653560793}
   dialogueText: {fileID: 523379360}
   dialogueBox: {fileID: 950398923}
+  continueButton: {fileID: 1413949853}
   bto1: {fileID: 1114399028}
   bto2: {fileID: 2079465010}
   bto3: {fileID: 1181935704}
@@ -18195,11 +18258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameObj: pist
+  trigger: {fileID: 0}
+  nameObj: wherePistola
   id: 1
   description: Esto es una pistola
   investigado: 0
-  preview: {fileID: 960660580}
 --- !u!65 &1681485844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18561,12 +18624,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    charactersNames: []
+    charactersNames:
+    - Timoteo Pinheiro
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
     sentences:
     - hola soy Timoteo Pinheiro
     - tengo miedo pero menos que perico
     - yo creo que es perico el que ha matado a juan
-    turnosBasic: 
+    turnosBasic: 000000000000000000000000
     sentencesEscopeta: []
     turnosEscopeta: 
     sentecesPistola: []
@@ -18577,8 +18643,14 @@ MonoBehaviour:
     turnosSoga: 
     sentencesCuchillo: []
     turnosCuchillo: 
-    sentencesMoraton: []
-    turnosMoraton: 
+    sentencesMoraton:
+    - cuenteme timoteinho, y ese moratinho en el ojinho?
+    - "\xC9 que eu ca\xED da escada descendo o corpo do Miguel Angel"
+    - el cuerpo de miguel angel dices? el muerto? el novivo?
+    - "n\xE3o n\xE3o, eu queria dizer a sobremesa cabelo de anjo, desculpe, espanhol
+      \xE9 dif\xEDcil para mim"
+    - ah vale, entonces todo bien timoteinho do santos aveiro SUIUUUU
+    turnosMoraton: 0200000000000000010000000000000001000000
     sentencesNarizRota: []
     turnosNarizRota: 
     sentencesNudillos: []
@@ -20302,6 +20374,7 @@ MonoBehaviour:
   - {fileID: 1681485843}
   personajes:
   - {fileID: 200314951}
+  - {fileID: 1730441647}
 --- !u!114 &1889661520
 MonoBehaviour:
   m_ObjectHideFlags: 0
