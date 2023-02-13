@@ -5,20 +5,25 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 684d6080af1e4b542bf9fbffeb427541, type: 2}
+      name: fine_grained_wood_col_2k
+    second: {fileID: 2800000, guid: bec28b4f390d15b468a58cf3b9120349, type: 3}
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 70fa62cd76c34d84cbb1e1c2e2b3d67f, type: 2}
+      name: fine_grained_wood_rough_2k
+    second: {fileID: 2800000, guid: 4a7a27b6b4c39dd43974cdc3195f829c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_bueno
+    second: {fileID: 2800000, guid: 5dd2a403a5354934bbc6e521292ece81, type: 3}
   materials:
     materialImportMode: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
