@@ -45,7 +45,7 @@ public class SliderManager : MonoBehaviour
 
     private void HandleValueChanged(float value)
     {
-        tmproTextSense.text = string.Format(formatTextSense, value);
+        tmproTextSense.text = string.Format(formatTextSense, (int) value/8);
     }
 
     public void AjustSense(float sense)

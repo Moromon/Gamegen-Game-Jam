@@ -59,7 +59,7 @@ public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
 
     protected void OnMouseOver()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && !GameManager.onDialogue)
         {
             Vector3 a = new Vector3(transform.position.x, 0, transform.position.z);
             Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
