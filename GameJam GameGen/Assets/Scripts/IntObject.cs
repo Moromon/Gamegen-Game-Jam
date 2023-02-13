@@ -10,6 +10,7 @@ public class IntObject : PersonajePrueba, ISubject<int>
     public string description = "";
 
     public bool investigado;
+    public bool highlighted;
 
     private List<IObserver<int>> _observers = new List<IObserver<int>>();
 

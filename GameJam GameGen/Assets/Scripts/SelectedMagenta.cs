@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Selection : MonoBehaviour
+public class SelectedMagenta : MonoBehaviour
 {
     public Material highlightMaterial;
-    public Material selectionMaterial;
+    public string tag;
 
-    private Material originalMaterialHighlight;
-    private Material originalMaterialSelection;
+    private Material[] originalMaterialHighlight;
     private Transform highlight;
-    private Transform selection;
     private RaycastHit raycastHit;
 
     private GameObject _player;
@@ -19,6 +17,7 @@ public class Selection : MonoBehaviour
     private void Start()
     {
         _player = GameObject.Find("Player");
+        originalMaterialHighlight = new Material[4];
     }
 
     void Update()
@@ -26,24 +25,49 @@ public class Selection : MonoBehaviour
         // Highlight
         if (highlight != null)
         {
-            highlight.GetComponent<MeshRenderer>().sharedMaterial = originalMaterialHighlight;
+            if (highlight.childCount == 0)
+            {
+                highlight.GetComponent<MeshRenderer>().material = originalMaterialHighlight[0];
+                highlight.GetComponent<IntObject>().highlighted = false;
+            }
+            else
+            {
+                for (int i = 0; i < highlight.childCount; i++)
+                {
+                    highlight.GetChild(i).GetComponent<MeshRenderer>().material = originalMaterialHighlight[i];
+                }
+                highlight.GetComponent<IntObject>().highlighted = false;
+            }
             highlight = null;
         }
-        
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit) && !GameManager.onDialogue) //Make sure you have EventSystem in the hierarchy before using EventSystem
         {
             highlight = raycastHit.transform;
-            if (highlight.CompareTag("Selectables"))
+            if (highlight.CompareTag(tag))
             {
                 Vector3 a = new Vector3(highlight.position.x, 0, highlight.position.z);
                 Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
                 float distance = Vector3.Distance(a, b);
-  
-                if (highlight.GetComponent<MeshRenderer>().material != highlightMaterial && distance<4f)
+
+                if (!highlight.GetComponent<IntObject>().highlighted && distance < 4f)
                 {
-                    originalMaterialHighlight = highlight.GetComponent<MeshRenderer>().material;
-                    highlight.GetComponent<MeshRenderer>().material = highlightMaterial;
+                    if (highlight.childCount == 0)
+                    {
+                        originalMaterialHighlight[0] = highlight.GetComponent<MeshRenderer>().material;
+                        highlight.GetComponent<MeshRenderer>().material = highlightMaterial;
+                        
+                    }
+                    else
+                    {
+                        for (int i = 0; i < highlight.childCount; i++)
+                        {
+                            originalMaterialHighlight[i] = highlight.GetChild(i).GetComponent<MeshRenderer>().material;
+                            highlight.GetChild(i).GetComponent<MeshRenderer>().material = highlightMaterial;
+                        }
+                    }
+                    highlight.GetComponent<IntObject>().highlighted = true;
                 }
                 else
                 {
