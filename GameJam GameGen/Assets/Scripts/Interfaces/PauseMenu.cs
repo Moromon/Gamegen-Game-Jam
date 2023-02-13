@@ -52,11 +52,12 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        GameManager.onMenu = false;
         if (!notebook.activeSelf && !GameManager.onDialogue)
         {
-            GameManager.onMenu = false;
+ 
             Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = 1f;
         }
 
     }
@@ -82,6 +83,10 @@ public class PauseMenu : MonoBehaviour
     {
        notebook.SetActive(false);
        GameManager.onMenu= false;
-        Cursor.lockState = CursorLockMode.Locked;
+        if(!GameManager.onDialogue)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        
     }
 }

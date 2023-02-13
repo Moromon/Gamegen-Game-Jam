@@ -1205,6 +1205,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.gameObject.SetActive(false);
         Debug.Log("End of conversation");
+        Time.timeScale= 1.0f;
         GameManager.onDialogue = false;
         Cursor.lockState = CursorLockMode.Locked;
         Reset();
