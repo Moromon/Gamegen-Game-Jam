@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: fine_grained_wood_col_2k
-    second: {fileID: 2800000, guid: bec28b4f390d15b468a58cf3b9120349, type: 3}
+    second: {fileID: 2800000, guid: d6854b22fef8fc34392ba5fa9d552eff, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: fine_grained_wood_rough_2k
-    second: {fileID: 2800000, guid: 4a7a27b6b4c39dd43974cdc3195f829c, type: 3}
+    second: {fileID: 2800000, guid: 9568fa61681d07240a65488bf3a1c6bf, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: metal_bueno
-    second: {fileID: 2800000, guid: 5dd2a403a5354934bbc6e521292ece81, type: 3}
+    second: {fileID: 2800000, guid: 77540b1e631cb0f4fa0e2d1d1d39a3e1, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -3,9 +3,24 @@ guid: 0be50ec59c763f245976ef9394e9ecd7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_peeling_paint_weathered_diff_2k
+    second: {fileID: 2800000, guid: c66ea5ecb5d49d3459fa786c2b11066a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_peeling_paint_weathered_nor_gl_2k
+    second: {fileID: 2800000, guid: 816c79f9ec05c9e44ab402bba2b5e8c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_peeling_paint_weathered_rough_2k
+    second: {fileID: 2800000, guid: 481f1fd64f1e3964287ff9b98c884fb1, type: 3}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
