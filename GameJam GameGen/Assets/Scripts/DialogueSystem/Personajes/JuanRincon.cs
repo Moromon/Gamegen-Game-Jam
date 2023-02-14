@@ -1,13 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts.DialogueSystem.Personajes
 {
-    public class Timoteo : PersonajePrueba
+    public class JuanRincon : PersonajePrueba
     {
         public override void Talk()
         {
-            identificacion = true;
+            horaMimirEstandar = true;
+            moratonJuanInvestigado = true;
+            chaqueta = true;
+
             trigger.TriggerDialogue(this);
 
         }

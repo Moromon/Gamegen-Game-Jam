@@ -3,11 +3,12 @@ using UnityEngine;
 
 namespace Assets.Scripts.DialogueSystem.Personajes
 {
-    public class Timoteo : PersonajePrueba
+    public class MiguelR : PersonajePrueba
     {
         public override void Talk()
         {
-            identificacion = true;
+            pistolaInvestigada = true;
+            pedroLlamo = true;
             trigger.TriggerDialogue(this);
 
         }
@@ -15,6 +16,12 @@ namespace Assets.Scripts.DialogueSystem.Personajes
         {
             switch (s)
             {
+                case "Crucifijo":
+                    crucifijoInvestigado = true;
+                    break;
+                case "Soga":
+                    sogaInvestigada = true;
+                    break;
                 default: break;
             }
         }

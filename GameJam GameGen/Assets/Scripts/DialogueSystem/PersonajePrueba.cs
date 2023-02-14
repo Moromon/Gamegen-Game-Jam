@@ -4,6 +4,7 @@ using UnityEngine.VFX;
 
 public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
 {
+    protected bool identificacion = false;
     protected bool pistolaInvestigada = false;
     protected bool wherePistola = false;
     protected bool crucifijoInvestigado = false;
@@ -24,11 +25,15 @@ public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
     protected bool apareceJoseManuel = false;
     protected bool joseCatalinaParranda = false;
     protected bool pedroLlamo = false;
+    protected bool chusoSotano = false;
+    protected bool anaMiguel = false;
+    protected bool chaqueta = false;
 
     public DialogueTrigger trigger;
 
     private GameObject _player;
 
+    bool IPersonaje.Identificacion { get => identificacion; set => identificacion = value; }
     bool IPersonaje.PistolaInvestigada { get => pistolaInvestigada; set => pistolaInvestigada = value; }
     bool IPersonaje.wherePistola { get => wherePistola; set => wherePistola = value; }
     bool IPersonaje.crucifijoInvestigado { get => crucifijoInvestigado; set => crucifijoInvestigado = value; }
@@ -46,6 +51,12 @@ public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
     bool IPersonaje.apareceJoseManuel { get => apareceJoseManuel; set => apareceJoseManuel = value; }
     bool IPersonaje.joseCatalinaParranda { get => joseCatalinaParranda; set => joseCatalinaParranda = value; }
     bool IPersonaje.pedroLlamo { get => pedroLlamo; set => pedroLlamo = value; }
+
+    bool IPersonaje.chusoSotano { get => chusoSotano; set => chusoSotano = value; }
+
+    bool IPersonaje.anaMiguel { get => anaMiguel; set => anaMiguel = value; }
+    bool IPersonaje.chaqueta { get => chaqueta; set => chaqueta = value; }
+
 
     private void Start()
     {

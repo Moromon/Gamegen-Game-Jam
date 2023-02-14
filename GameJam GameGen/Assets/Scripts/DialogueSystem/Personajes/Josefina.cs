@@ -1,13 +1,13 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts.DialogueSystem.Personajes
 {
-    public class Timoteo : PersonajePrueba
+    public class Josefina : PersonajePrueba
     {
         public override void Talk()
         {
-            identificacion = true;
+            pedroLlamo = true;
             trigger.TriggerDialogue(this);
 
         }
@@ -15,6 +15,12 @@ namespace Assets.Scripts.DialogueSystem.Personajes
         {
             switch (s)
             {
+                case "Crucifijo":
+                    crucifijoInvestigado = true;
+                    break;
+                case "Cuchillo":
+                    missingCuchillo = true;
+                    break;
                 default: break;
             }
         }

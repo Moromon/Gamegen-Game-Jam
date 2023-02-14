@@ -2,6 +2,7 @@ public interface IPersonaje
 {
     bool PistolaInvestigada { get; set; }
 
+    bool Identificacion { get; set; }
     bool wherePistola { get; set; }
 
     bool crucifijoInvestigado { get; set; }
@@ -22,6 +23,12 @@ public interface IPersonaje
     bool apareceJoseManuel { get; set; }
     bool joseCatalinaParranda { get; set; }
     bool pedroLlamo { get; set; }
+
+    bool chusoSotano { get; set; }
+
+    bool anaMiguel { get; set; }
+
+    bool chaqueta { get; set; }
 
     public void Talk();
 
