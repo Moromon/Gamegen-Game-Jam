@@ -64,7 +64,8 @@ public class Door : MonoBehaviour
     {
         Quaternion startRot = transform.rotation;
         Quaternion endRot;
-
+        AudioManager.instance.Stop("doorClose");
+        AudioManager.instance.Play("doorOP");
         if (dot >= forwardDir)
         {
             endRot = Quaternion.Euler(new Vector3(0, startRotation.y - rotationAmt, 0));
@@ -101,6 +102,8 @@ public class Door : MonoBehaviour
     {
         Quaternion startRot = transform.rotation;
         Quaternion endRot = Quaternion.Euler(startRotation);
+        AudioManager.instance.Stop("doorOp");
+        AudioManager.instance.Play("doorClose");
 
         abierta = false;
         float time = 0;
