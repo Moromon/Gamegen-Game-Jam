@@ -289,6 +289,426 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &81726491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 81726492}
+  - component: {fileID: 81726497}
+  - component: {fileID: 81726496}
+  - component: {fileID: 81726495}
+  - component: {fileID: 81726494}
+  - component: {fileID: 81726493}
+  m_Layer: 0
+  m_Name: Catalina
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &81726492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -500.374, y: -99.98, z: 5.605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &81726493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Catalina Mes\xEDas"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches se\xF1orita. \xBFPuede identificarse?"
+    - "Buenas noches inspector. Me llamo Catalina Mes\xEDas y soy excursionista"
+    - "\xBFLe importa que le haga unas preguntas?"
+    - Claro, sin problema
+    turnosBasic: 01000000000000000100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora te fuiste a dormir?\r"
+    - "La mayor parte de nosotros se fue pronto a dormir tras la pelea de la cena.\r
+      \n\r"
+    - "Los \xFAnicos que se quedaron despiertos fueron Jose Manuel y Ana.\r\n\r"
+    - "Ya veo\n\r"
+    - "Despu\xE9s nos despertamos al o\xEDr jaleo en el sal\xF3n de madrugada.\r\n\n\n"
+    - "Jose, Mar\xEDa Isabel, Chuso y yo fuimos a ver qu\xE9 pasaba. Juan se qued\xF3
+      dormido y faltaban Chema y Ana"
+    - "\xBFQui\xE9n estaba en el sal\xF3n?"
+    - "La familia propietaria, Don Miguel \xC1ngel y Ana. Cuando sal\xED de la habitaci\xF3n
+      sal\xED descalza y pis\xE9 algo h\xFAmedo"
+    - "M\xE1s tarde me he dado cuenta de que era un charco de sangre.\n"
+    - "\xBFEl que se encuentra aqu\xED, al lado del pasillo?"
+    - "S\xED"
+    turnosHoraEstandar: 0100000000000000000000000100000000000000000000000100000000000000000000000100000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel:
+    - "\xBFC\xF3mo encontrasteis el cad\xE1ver de vuestro amigo?"
+    - "Nos despertamos de madrugada por o\xEDr barullo fuera de la habitaci\xF3n"
+    - "Cuando vi la situaci\xF3n present\xED que algo estaba mal, as\xED que avis\xE9
+      a Josel\xEDn"
+    - "Despu\xE9s de que Don Miguel y Pedro salieran al exterior, decid\xED investigar
+      con Josel\xEDn y\u2026 "
+    - bueno encontramos a Jose Manuel colgado en la despensa
+    - "\xBFSospechas de alguien?"
+    - "No lo s\xE9\u2026\r\n\n"
+    - "Nadie ten\xEDa motivos para hacerle nada.\r Precisamente Jose Manuel no se
+      llevaba a matar con nadie"
+    - "\xBFHay alguien que s\xED se llevara a matar?"
+    - "Bueno\u2026"
+    - "Para esclarecer lo ocurrido esta informaci\xF3n puede ser \xFAtil"
+    - 'Pues Chuso no se llevaba muy bien precisamente con Pedro
+
+
+'
+    - "Quiero decir, Chuso est\xE1 con Mar\xEDa Isabel, pero estos \xFAltimos d\xEDas
+      Mar\xEDa Isabel ha estado muy cercana con Pedro\n\n"
+    - " y eso ha hecho que Chuso est\xE9 cabreado d\xEDa s\xED d\xEDa tambi\xE9n.\r"
+    - "Por otro lado, Mar\xEDa Isabel parec\xEDa tenerle bastante tirria a Ana.\r\nSiempre
+      se met\xEDa con ella\n\n"
+    - "Y bueno, el odio de Ana era mutuo. Antes la estaba oyendo farfullar algo de
+      que Mar\xEDa Isabel es una ladrona"
+    - "\xBFD\xF3nde est\xE1 Mar\xEDa Isabel?"
+    - "No lo s\xE9"
+    turnosApareceJoseManuel: 010000000000000000000000000000000000000001000000000000000000000001000000000000000100000000000000000000000000000000000000000000000100000000000000
+    sentencesJoseCatalinaParranda:
+    - "\xBFQu\xE9 hicist\xE9is durante vuestra investigaci\xF3n? "
+    - "Pr\xE1cticamente nada. \r Josel\xEDn y yo salimos a investigar el patio exterior,
+      pero estaba tan oscuro que no encontramos nada. "
+    - "Creo que nos cruzamos a Chuso saliendo del s\xF3tano.\r\n"
+    - 'Luego escuchamos un tiro y vimos un fogonazo en la distancia.
+
+'
+    - 'Nos acercamos a investigar y vimos a Pedro muerto.
+
+'
+    - "Creo que el que dispar\xF3 a Pedro era un hombre por su complexi\xF3n, pero
+      no estoy segura."
+    turnosJoseCatalinaParranda: 010000000000000000000000000000000000000000000000
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &81726494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623822ddb1b46224c937a11f298d2f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 81726493}
+--- !u!65 &81726495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &81726496
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &81726497
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81726491}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &95655068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95655069}
+  - component: {fileID: 95655074}
+  - component: {fileID: 95655073}
+  - component: {fileID: 95655072}
+  - component: {fileID: 95655071}
+  - component: {fileID: 95655070}
+  m_Layer: 0
+  m_Name: Drislav
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95655069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -497.84, y: -99.98, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95655070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Dr\u017Eislav Kova\u010Devi\u0107"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches caballero. \xBFPuede identificarse?"
+    - "\u017Dao mi je \u0161to ne govorim \u0161panjolski"
+    - "Perdone,  \xBFqu\xE9 ha dicho?"
+    - "Dr\u017Eislav *El hombre se se\xF1ala a s\xED mismo*"
+    - Supongo que no habla mi idioma pero me entiende un poco
+    - '*Asiente*'
+    turnosBasic: 010000000000000001000000000000000100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel:
+    - "Dr\u017Eislav, \xBFdijiste algo de \"crvena\"?"
+    - "Crvena.\r \u010Dovjek u crvenom"
+    - Mierda no entiendo el resto
+    - '*Imita el gesto de alguien disparando*'
+    - "\xBFSangre?"
+    - "*Niega con la cabeza\r*\n"
+    - "*Se\xF1ala mi camisa*"
+    - "\xBFCamisa roja dices?"
+    - '*Asiente*'
+    - "Vale, qui\xE9n dispar\xF3 a Pedro tuvo que ser alguien vestido de rojo.\r\nSeg\xFAn
+      el testimonio de Dr\u017Eislav"
+    turnosHoraJoseManuel: 01000000000000000100000000000000010000000000000000000000010000000000000001000000
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &95655071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac94d0b8bcc064040a13e02c0bebd712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 95655070}
+--- !u!65 &95655072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &95655073
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &95655074
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95655068}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &200314944
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,11 +835,296 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    characterName: Char 1
+    charactersNames: []
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
     sentences:
     - hola soy el char1 donquijote de la parrilla
     - y me voy a rascar la rodilla
     - con un poco de mantequilla
+    turnosBasic: 
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!1 &203256137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203256138}
+  - component: {fileID: 203256143}
+  - component: {fileID: 203256142}
+  - component: {fileID: 203256141}
+  - component: {fileID: 203256140}
+  - component: {fileID: 203256139}
+  m_Layer: 0
+  m_Name: Mariajo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &203256138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -493.87, y: -99.98, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203256139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Mar\xEDa Jos\xE9 Espinosa"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches se\xF1ora.\r \n\xBFPuede identificarse?"
+    - "Soy Mar\xEDa Jos\xE9 Espinosa, mujer de Miguel \xC1ngel. Soy jornalera tambi\xE9n."
+    - "Bien se\xF1ora\u2026"
+    - "\xBFVa a detener ya a los excursionistas?"
+    - "Em\u2026 \r\n"
+    - "\xBFPor qu\xE9 deber\xEDa?"
+    - "Porque ellos son los que han provocado todo este jaleo. Mi cu\xF1ado est\xE1
+      desaparecido\n"
+    - "Y seguro que ellos mataron al pobre chico de los due\xF1os. Tiene que detenerlos"
+    - "Se\xF1ora, necesito pruebas para detener a alguien"
+    - "\xBFQu\xE9 m\xE1s pruebas necesita?\r \nEs evidente que han sido ellos"
+    - "Entonces, \xBFc\xF3mo explica que haya un excursionista muerto y otra desaparecida?"
+    - "Seguro que ellos tambi\xE9n mataron a su amigo. No estar\xEDa de acuerdo en
+      lo que quer\xEDan hacer y lo mataron por ello."
+    - '*Suspira*
+
+'
+    - "(Creo que no voy a sacar nada en claro de esta se\xF1ora.)"
+    turnosBasic: 0100000000000000010000000000000001000000010000000000000000000000010000000000000001000000000000000100000001000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta:
+    - "Hemos encontrado el cuerpo de su cu\xF1ado, Francisco P\xE9rez, dentro del
+      pozo. Parece que muri\xF3 al caer dentro"
+    - "\xBFVen? Otra prueba m\xE1s contra los excursionistas. Seguro que fueron ellos"
+    - "\xBFEn qu\xE9 se basa para esa acusaci\xF3n tan grave?"
+    - "No necesito basarme en nada, es evidente. Usted como inspector deber\xEDa
+      verlo al instante"
+    - "Por favor, deje a los profesionales hacer nuestro trabajo y abst\xE9ngase
+      de hacer acusaciones en vano"
+    turnosChaqueta: 0100000000000000010000000000000002000000
+--- !u!114 &203256140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f18e119f31f1c04cb9237bb9f425d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 203256139}
+--- !u!65 &203256141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &203256142
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &203256143
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203256137}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &255838176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255838177}
+  m_Layer: 0
+  m_Name: Personajes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255838177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255838176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 497.8088, y: 101.16524, z: 2.027822}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1730441646}
+  - {fileID: 1161463628}
+  - {fileID: 1223439271}
+  - {fileID: 603991654}
+  - {fileID: 1337893836}
+  - {fileID: 81726492}
+  - {fileID: 1768938297}
+  - {fileID: 723680761}
+  - {fileID: 1389693915}
+  - {fileID: 424397033}
+  - {fileID: 95655069}
+  - {fileID: 203256138}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377008245
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +1260,206 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377008245}
   m_CullTransparentMesh: 1
+--- !u!1 &424397032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424397033}
+  - component: {fileID: 424397038}
+  - component: {fileID: 424397037}
+  - component: {fileID: 424397036}
+  - component: {fileID: 424397035}
+  - component: {fileID: 424397034}
+  m_Layer: 0
+  m_Name: GonzaloSuarez
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424397033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -500.1, y: -99.98, z: 0.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424397034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Gonzalo Su\xE1rez"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches caballero, \xBFpuede identificarse?"
+    - Me llamo Gonzalo Suarez. Soy jornalero
+    - "\xBFUsted es de aqu\xED?"
+    - "Vengo del Per\xFA amigo."
+    - "\xBFCu\xE1nto tiempo lleva trabajando de jornalero?"
+    - "Pues viene con mi compa\xF1ero Dr\u017Eislav hace unos meses ac\xE1 para Espa\xF1a.\r\n"
+    - "Antes de venir pas\xE9 tiempo en Croacia junto a Dr\u017Eislav pero al estar
+      aguja decid\xED venir ac\xE1 para Espa\xF1a."
+    - "\xBFPodr\xEDa explicarme qu\xE9 ha pasado esta noche?"
+    - "Uy lo usual. Los hermanos P\xE9rez se metieron bomba y se pelearon con los
+      excursionistas.\r\n"
+    - "Despu\xE9s de todo nos marchamos pronto a dormir que ma\xF1ana se labura."
+    turnosBasic: 01000000000000000100000000000000010000000000000000000000010000000000000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel:
+    - "\xBFHas dicho que conoces a Dr\u017Eislav desde hace tiempo?"
+    - "As\xED es agente. Dr\u017Eislav lleva siendo compa\xF1ero m\xEDo unos meses."
+    - "\xBFEntiendes algo de lo que dice? No s\xE9 hablar croata"
+    - 'Poca cosa. Pero nos entendemos bien normalmente
+
+'
+    - "\xBFHa dicho algo de lo ocurrido esta noche?"
+    - Lleva diciendo algo de rojo desde hace un rato.
+    - "\xBFC\xF3mo?"
+    - "Imita el disparo con un rifle. Y no para de decir rojo. No se a qu\xE9 se
+      referir\xE1"
+    - "\xBFQu\xE9 dice exactamente?"
+    - Crvena. Eso significa rojo
+    turnosHoraJoseManuel: 01000000000000000100000000000000010000000000000001000000000000000100000000000000
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel:
+    - "\xBFQu\xE9 hiciste despu\xE9s de que se encontrara el primer cad\xE1ver?"
+    - "Sal\xED a fumar con mis compa\xF1eros"
+    turnosApareceJoseManuel: 0100000000000000
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &424397035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7842f2ad15092479abd397979586c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 424397034}
+--- !u!65 &424397036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &424397037
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &424397038
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424397032}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &476833773
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +1489,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68e42d514934c7479b99f05396cc2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  continueButton: {fileID: 0}
+  bto1: {fileID: 0}
+  bto2: {fileID: 0}
+  bto3: {fileID: 0}
+  bto4: {fileID: 0}
+  bto5: {fileID: 0}
+  bto6: {fileID: 0}
+  bto1onUse: 0
+  bto2onUse: 0
+  bto3onUse: 0
+  bto4onUse: 0
+  bto5onUse: 0
+  bto6onUse: 0
 --- !u!4 &476833775
 Transform:
   m_ObjectHideFlags: 0
@@ -599,6 +1520,138 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &603991653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083537745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &603991654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083537745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &603991655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603991653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - Josefina Esparza
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches se\xF1ora"
+    - "*Entre sollozos* Buenas no son, se\xF1or inspector. Soy Josefina Esparza,
+      mujer de Don Miguel"
+    - "\xBFUsted tambi\xE9n regenta el albergue?"
+    - "As\xED es"
+    turnosBasic: 01000000000000000100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo:
+    - "Hemos encontrado un crucifijo junto al cad\xE1ver de su hijo. Esta mellado
+      y manchado de sangre."
+    - "Ese crucifijo pertenece al sal\xF3n del albergue. Lleva con mi familia varias
+      generaciones"
+    - "C\xF3mo han podido profanar as\xED un objeto tan sagrado."
+    turnosCrucifijo: 010000000000000000000000
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo:
+    - "Hemos visto que falta un cuchillo en la cocina. \xBFSabe donde puede estar?"
+    - "No lo s\xE9, todas las noches despu\xE9s de la cena reviso que no falte nada
+      en la cocina para asegurarnos de que no nos roban"
+    - "Si algui\xE9n ha cogido un cuchillo tuvo que ser tras la cena. "
+    - "Cuando encontraron el chico muerto en la cocina entraron Jos\xE9, Catalina
+      y Ana "
+    turnosCuchillo: 01000000000000000000000000000000
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo:
+    - "\xBFPodr\xEDa decirme qui\xE9n nos ha llamado?"
+    - '*Suspira* Mi hijo Pedro'
+    - "\xBFSu hijo nos llam\xF3?"
+    - "S\xED, les llam\xF3 poco despu\xE9s de encontrar el primer cad\xE1ver, a eso
+      de las 3:00. Un rato despu\xE9s fue asesinado"
+    - "\xBFA las 3:00? \xBFNo estaban dormidos a esa hora?"
+    - "Tras la cena mi marido y yo nos fuimos a dormir. Nos despertamos en mitad
+      de la madrugada porque hab\xEDa mucho alboroto"
+    - "Cuando llegamos Don Miguel \xC1ngel estaba buscando a su hermano, Don Francisco"
+    - "Yo me qued\xE9 con unos cuantos excursionistas en la sala de estar"
+    - "\xBFPodr\xEDa decirme qui\xE9nes exactamente?"
+    - "Jos\xE9, Ana, Jes\xFAs Manuel, y Catalina"
+    - "Mi marido y mi hijo salieron a buscar a Don Francisco. Los jornaleros segu\xEDan
+      dormidos excepto Miguel \xC1ngel"
+    - "\xBFHay alguna cosa m\xE1s que desee comentarnos?"
+    - "Una de las excursionistas me pidi\xF3 la llave del s\xF3tano. No la hemos
+      vuelto a ver desde entonces"
+    turnosPedroLlamo: 01000000000000000100000000000000010000000000000000000000000000000100000000000000000000000100000000000000
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &603991656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603991653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9315edb0e33ba848abc53962c6c93d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 603991655}
+--- !u!65 &603991657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603991653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0045254724, y: 0.0025747854, z: 0.015601508}
+  m_Center: {x: 0.00002889405, y: -0.0017716723, z: -0.003678592}
 --- !u!1 &643379832
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,11 +1762,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: {fileID: 0}
   nameObj: pistola
   id: 0
   description: Esto es una pistola
   investigado: 0
-  preview: {fileID: 0}
+  highlighted: 0
 --- !u!1 &701952668
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +1869,204 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &723680760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723680761}
+  - component: {fileID: 723680766}
+  - component: {fileID: 723680765}
+  - component: {fileID: 723680764}
+  - component: {fileID: 723680763}
+  - component: {fileID: 723680762}
+  m_Layer: 0
+  m_Name: "Juan Rinc\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &723680761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -496.41, y: -99.98, z: 8.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723680762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Juan Rinc\xF3n"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "\xBFPuede identificarse?"
+    - "Me llamo Juan Rinc\xF3n. Soy un excursionista.\r\n"
+    - "\xBFPuedes explicarme qu\xE9 ha ocurrido?"
+    - "Puedo aportar poco se\xF1or agente. He estado dormido hasta que encontraron
+      el cad\xE1ver de Chema "
+    - "Despu\xE9s me qued\xE9 la mayor parte del tiempo aqu\xED"
+    turnosBasic: 0100000000000000010000000000000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton:
+    - "\xBFC\xF3mo te hiciste ese morat\xF3n?"
+    - "Durante la cena. Don Miguel \xC1ngel me peg\xF3 un pu\xF1etazo y me ha dejado
+      marca"
+    - "\xBFA qu\xE9 se debi\xF3 la pelea?"
+    - "Culpa de Chuso que ven\xEDa cabreado. Seg\xFAn le o\xED tuvo una discusi\xF3n
+      con Mar\xEDa Isabel, su novia\r\n"
+    - "Esos dos hermanos jornaleros no nos han tragado en ning\xFAn momento desde
+      que estamos aqu\xED\n\n"
+    - 'Y bueno, el resto de la historia te la puedes imaginar
+
+
+'
+    turnosMoraton: 010000000000000001000000000000000000000000000000
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora te fuiste a dormir?"
+    - "La mayor parte de nosotros se fue pronto a dormir tras la pelea de la cena
+      \n"
+    - "Yo no me despert\xE9 hasta que apareci\xF3 Chema muerto"
+    turnosHoraEstandar: 010000000000000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta:
+    - "\xBFNo tienes fr\xEDo sin una chaqueta?"
+    - "Mi hermana Ana ha perdido la suya, as\xED que se la he dejado.\r\nNo me quedan
+      m\xE1s en la habitaci\xF3n"
+    turnosChaqueta: 0100000000000000
+--- !u!114 &723680763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c7e4b319bd1dd4b8861c4552fc7f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 723680762}
+--- !u!65 &723680764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &723680765
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &723680766
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723680760}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &745314188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +2647,235 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117935374}
   m_CullTransparentMesh: 1
+--- !u!1 &1161463627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161463628}
+  - component: {fileID: 1161463633}
+  - component: {fileID: 1161463632}
+  - component: {fileID: 1161463631}
+  - component: {fileID: 1161463630}
+  - component: {fileID: 1161463629}
+  m_Layer: 0
+  m_Name: Miguel Rios
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1161463628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -491.79, y: -99.98, z: 8.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161463629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Miguel R\xEDos"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - Buenas noches caballero
+    - "Me temo que no son buenas se\xF1or inspector. Soy Miguel R\xEDos, due\xF1o
+      del albergue"
+    - "\xBFPodr\xEDa explicarme que ha ocurrido?"
+    - "Primero se encontr\xF3 el cad\xE1ver de uno de nuestros hu\xE9spedes. Luego
+      encontramos el cuerpo de mi hijo en el jard\xEDn"
+    - "\xBFC\xF3mo dice?"
+    - "\xBFEntonces hay dos cad\xE1veres?"
+    - "S\xED, y dos desaparecidos"
+    - "Mierda, parece que esto va a ser m\xE1s complejo de lo que pensaba"
+    - "\xBFPuede hacernos un resumen de lo sucedido?\n"
+    - "Ver\xE1, en el albergue se alojan dos grupos de personas: un grupo de j\xF3venes
+      excursionistas y un grupo de jornaleros"
+    - "Entre los dos grupos lleva habiendo tensi\xF3n un par de d\xEDas"
+    - "\xBFQu\xE9 tipo de tensi\xF3n?"
+    - Esta misma noche ha habido una pelea a la hora de la cena
+    - "De madrugada ha aparecido en la despensa el primer cad\xE1ver, uno de los
+      excursionistas: Jose Manuel Azuaga"
+    - El cuerpo fue encontrado por dos de los excursionistas
+    - "Posteriormente, pasada casi una hora desde la aparici\xF3n del primer cuerpo,
+      escuchamos un disparo en el patio"
+    - Cuando fuimos a investigar encontramos a mi hijo Pedro muerto junto a mi escopeta
+      de caza
+    turnosBasic: 0100000000000000010000000000000001000000020000000000000002000000010000000000000000000000010000000000000000000000000000000000000000000000
+    sentencesEscopeta:
+    - "\xBFD\xF3nde se encontraba la escopeta originalmente?"
+    - "Tras encontrar el primer cuerpo se mont\xF3 mucho revuelo. Para ese momento
+      Francisco P\xE9rez hab\xEDa desaparecido"
+    - Don Francisco, uno de los jornaleros, fue uno de los involucrados en la pelea
+      de la cena. Estaba un poco borracho.
+    - "Sal\xED junto a mi hijo al patio a buscarle. Tom\xE9 la escopeta de mi habitaci\xF3n
+      y sal\xED con Pedro"
+    - "Tras mirar un rato no encontramos nada. Volvimos dentro del albergue y dej\xE9
+      la escopeta junto a la puerta del patio"
+    - "Alguien debi\xF3 cogerla cuando nadie miraba"
+    turnosEscopeta: 010000000000000000000000000000000000000000000000
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo:
+    - "Hemos encontrado un crucifijo junto al cad\xE1ver de su hijo. Esta mellado
+      y manchado de sangre."
+    - "As\xED que ah\xED est\xE1 el crufijo desaparecido de la sala de estar. Qui\xE9n
+      lo habr\xE1 podido coger"
+    - Ya veo, interesante
+    turnosCrucifijo: 010000000000000001000000
+    sentencesSoga:
+    - Hemos encontrado una soga cortada junto a la puerta del patio. Creemos que
+      con la parte que falta colgaron a Jose Manuel
+    - Esa soga estaba intacta antes de irnos a dormir
+    - "Me fij\xE9 que estaba cortada cuando dej\xE9 la escopeta junto a la puerta,
+      no me acord\xE9 de dec\xEDrselo antes"
+    turnosSoga: 010000000000000000000000
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo:
+    - "\xBFSabe qui\xE9n fue la persona que nos llam\xF3?"
+    - '*Miguel suspira* Fue mi hijo Pedro
+
+'
+    - "\xBFFue su propio hijo el que nos llam\xF3?"
+    - "S\xED, les llam\xF3 poco despu\xE9s de que encontraramos el primer cad\xE1ver,
+      sobre las 3:00. Poco despu\xE9s fue asesinado"
+    - "\xBFA las 3:00? \xBFA que hora se fueron a dormir?"
+    - "Mi familia y yo nos retiramos tras la pelea de la cena, as\xED como la mayor
+      parte de los hu\xE9spedes."
+    - Esto fue sobre las 22:30
+    - "Jurar\xEDa que el chico que apareci\xF3 muerto segu\xEDa a\xFAn despierto
+      sobre esa hora, acompa\xF1ado por una amiga suya, Ana"
+    turnosPedroLlamo: 0100000000000000010000000000000001000000000000000000000000000000
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1161463630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3119109f85c03b4eb59104d92be0ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1161463629}
+--- !u!65 &1161463631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1161463632
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1161463633
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161463627}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1210818557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +3010,661 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210818557}
   m_CullTransparentMesh: 1
+--- !u!1 &1223439270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223439271}
+  - component: {fileID: 1223439276}
+  - component: {fileID: 1223439275}
+  - component: {fileID: 1223439274}
+  - component: {fileID: 1223439273}
+  - component: {fileID: 1223439272}
+  m_Layer: 0
+  m_Name: Jose Rodriguez
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223439271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -494.15, y: -99.98, z: 8.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223439272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Jose Rodr\xEDguez"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion:
+    - "\xBFPuede identificarse?"
+    - "Me llamo Jose Rodr\xEDguez pero me llaman Josel\xEDn. Soy el l\xEDder del
+      grupo de excursionistas"
+    - "\xBFPodr\xEDas explicarme que ha sucedido aqu\xED esta noche?"
+    - "Mi grupo y yo est\xE1bamos qued\xE1ndonos un par de d\xEDas porque estamos
+      haciendo el Camino de Santiago desde C\xF3rdoba"
+    - "Ya veo. \xBFPuedes hablarme de tu grupo?"
+    - "Aqu\xED estamos Chuso, la Mesi, los Rinc\xF3n y yo\n"
+    - "\xBFPodr\xEDas darme nombres completos?"
+    - "Chuso es Jes\xFAs Manuel Guijarro\nLa Mesi es Catalina Mes\xEDas\n"
+    - "Los Rinc\xF3n son Ana Rinc\xF3n y Juan Rinc\xF3n, hermanos"
+    - "Uno de los muertos, Jose Manuel Azuaga, tambi\xE9n estaba con nosotros"
+    - "Tambi\xE9n ha desaparecido de nuestro grupo Maria Isabel Montiel. No sabemos
+      d\xF3nde puede estar"
+    - "\xBFVuestra amiga desapareci\xF3 hace poco?"
+    - "No sabr\xEDa decirte, yo sal\xED con Catalina a buscar a Jose Manuel"
+    turnosIdentificacion: 01000000000000000100000000000000010000000000000001000000000000000000000000000000000000000100000000000000
+    sentences:
+    - Buenas noches caballero
+    - Buenas noches inspector
+    turnosBasic: 0100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora te fuiste a dormir?"
+    - La mayor parte de nosotros nos fuimos a dormir tras la pelea de la cena
+    - "\xBFQu\xE9 pas\xF3 durante la cena?"
+    - "Chuso estaba cabreado no s\xE9 muy bien por qu\xE9. Durante la cena se cruz\xF3
+      con Don Francisco que hab\xEDa bebido de m\xE1s"
+    - Juan y Jose Manuel se metieron de por medio y la cosa se fue de madre
+    - "Don Miguel \xC1ngel golpe\xF3 a Juan y Jose Manuel golpe\xF3 a Don Francisco"
+    - "M\xE1s tarde, Pedro se meti\xF3 entre medias para parar la pelea pero tambi\xE9n
+      recibi\xF3 alg\xFAn golpe"
+    - Entiendo
+    - "La pelea termin\xF3 y no pensamos que la cosa fuese a ir a mayores. "
+    - "De madrugada encontramos el cad\xE1ver de Jose Manuel colgado en la despensa"
+    - "\xBFCrees que pudo ser un suicidio?"
+    - De ninguna manera, Jose Manuel era muy religioso. Yo creo que Don Francisco
+      tuvo algo que ver
+    - "\xBFPor qu\xE9 lo crees?"
+    - Porque nadie lo ha visto desde la hora de la cena
+    turnosHoraEstandar: 0100000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000100000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel:
+    - "\xBFC\xF3mo encontrasteis el cad\xE1ver de vuestro amigo?"
+    - "La Mesi y yo nos encontramos en mitad de la noche despues de o\xEDr a Ana
+      levantarse"
+    - "O\xEDmos que pasaba algo en la sala de estar as\xED que salimos a mirar"
+    - "Nos encontramos a Don Miguel con su familia junto a Ana y Don Miguel \xC1ngel"
+    - "Don Miguel \xC1ngel parec\xEDa nervioso por no encontrar a su hermano"
+    - "Le pedimos permiso a do\xF1a Josefina para mirar y fuimos a la cocina para
+      ver si hab\xEDa algo raro"
+    - "La despensa estaba entreabierta asi que Catalina y yo decidimos mirar dentro
+      a ver si hab\xEDa alguien y..."
+    - Encontrasteis a vuestro amigo
+    - "S\xED"
+    - "\xBFD\xF3nde estaban tus compa\xF1eros?"
+    - "Catalina estaba conmigo, Ana y Chuso estaban en el sal\xF3n. Juan no se lleg\xF3
+      a levantar de la cama. Mar\xEDa Isabel estaba fuera"
+    - "\xBFPuede ella tener relaci\xF3n con el asesinato?"
+    - "\xBFC\xF3mo? No, no creo. "
+    - Ella siempre se ha metido con todo el mundo, especialmente con Ana, pero no
+      creo que haya matado a nadie
+    turnosApareceJoseManuel: 0100000000000000000000000000000000000000000000000000000001000000000000000100000000000000010000000000000000000000
+    sentencesJoseCatalinaParranda:
+    - "\xBFQu\xE9 hicisteis durante vuestra investigaci\xF3n?\n"
+    - "Pr\xE1cticamente nada. Salimos al patio a buscar pero estaba tan oscuro que
+      no conseguimos nada"
+    - Luego escuchamos un disparo y vimos un fogonazo en el patio
+    - "Nos acercamos a ver que suced\xEDa y vimos a Pedro muerto"
+    turnosJoseCatalinaParranda: 01000000000000000000000000000000
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!65 &1223439273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1223439274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bc0a4cbd4dc4747a49b7de3fdd9409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1223439272}
+--- !u!23 &1223439275
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1223439276
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223439270}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1337893835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337893836}
+  - component: {fileID: 1337893841}
+  - component: {fileID: 1337893840}
+  - component: {fileID: 1337893839}
+  - component: {fileID: 1337893838}
+  - component: {fileID: 1337893837}
+  m_Layer: 0
+  m_Name: Chuso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337893836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -498.704, y: -99.98, z: 7.804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1337893837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Jes\xFAs Manuel Guijarro"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion:
+    - "\xBFPuede identificarse?"
+    - "Me llamo Jes\xFAs Manuel Guijarro, me llaman Chuso. Soy uno de los excursionistas..."
+    - "\xBFAlgo m\xE1s que quiera contarnos?"
+    - "\xBFQu\xE9 quiere que le diga?"
+    - Por lo que tengo entendido hay un muerto y una persona desaparecida en su grupo
+    - "S\xED, Maria Isabel, mi pareja."
+    - "\xBFD\xF3nde la vio por \xFAltima vez?"
+    - "Antes de encontrar el cuerpo de Jose Manuel se fue al s\xF3tano, no se a hacer
+      qu\xE9."
+    - Parece afligido, caballero
+    - "Uno de mis amigos est\xE1 muerto y no se d\xF3nde est\xE1 mi pareja. "
+    - "Adem\xE1s, ese cerdo de Don Francisco sigue por ah\xED y podr\xEDa estar escapando"
+    - "*Te agarra del hombro y te aparta* Este chico esta muy a la defensiva, podr\xEDa
+      saber algo importante"
+    - Descuida
+    - "Estamos aqu\xED para encontrar al responsable, si colaboras tendremos mas
+      probabilidades de encontrarlo"
+    - "\xBFQu\xE9 quieres saber?"
+    turnosIdentificacion: 010000000000000001000000000000000100000000000000010000000000000001000000000000000000000002000000010000000100000000000000
+    sentences:
+    - Buenas noches
+    - Buenas noches Inspector
+    turnosBasic: 0100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora os fuisteis a dormir?"
+    - Nos fuimos todos juntos, sobre las 22:30, y nos despertamos todos juntos, sobre
+      las 2:30
+    - "Despu\xE9s de eso estuve todo el rato en el sal\xF3n"
+    turnosHoraEstandar: 010000000000000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano:
+    - Por lo que nos has contado, antes nos has mentido
+    - "\xBFDisculpe?"
+    - "Seg\xFAn otro testigo, usted sali\xF3 del albergue en direcci\xF3n al s\xF3tano"
+    - ' No se le volvio a ver hasta despues de la muerte de Pedro'
+    - "Fui hacia el s\xF3tano s\xED, pero no hice nada m\xE1s. La puerta estaba cerrada
+      por dentro as\xED que no pude entrar. "
+    - "Me d\xED la vuelta para volver a entrar, pero justo entonces escuch\xE9 el
+      disparo"
+    turnosChusoSotano: 010000000000000001000000010000000000000000000000
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1337893838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ae3ce11f27d344db88b484a76dd684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1337893837}
+--- !u!65 &1337893839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1337893840
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1337893841
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337893835}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1389693914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389693915}
+  - component: {fileID: 1389693920}
+  - component: {fileID: 1389693919}
+  - component: {fileID: 1389693918}
+  - component: {fileID: 1389693917}
+  - component: {fileID: 1389693916}
+  m_Layer: 0
+  m_Name: "Miguel \xC1ngel P\xE9rez"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389693915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -501.12, y: -99.98, z: 8.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389693916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Miguel \xC1ngel"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Buenas noches caballero, \xBFpuede identificarse?\n"
+    - "Me llamo Miguel \xC1ngel P\xE9rez. Soy jornalero."
+    - "Usted es hermano de Don Francisco \xBFcierto?"
+    - "As\xED es. \xBFSabe algo de \xE9l?"
+    - Seguimos investigando
+    - "\xBFPodr\xEDa explicarnos qu\xE9 ha ocurrido esta noche?"
+    - 'Esos excursionistas no dejaban de provocarnos todo el rato. Mi hermano y yo
+      nos peleamos con ellos durante la cena.
+
+'
+    - "\xBFHubo alg\xFAn motivo que originara la pelea?"
+    - "Ese chico, el Jes\xFAs, se choc\xF3 contra mi hermano y no se disculp\xF3.\r\n"
+    - "Tanto Paco como yo bebimos un poco m\xE1s de la cuenta y bueno\u2026"
+    turnosBasic: 01000000000000000100000000000000010000000100000000000000010000000000000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos:
+    - "\xBFEsos moratones de los nudillos se los hizo durante la pelea?"
+    - "S\xED."
+    - "\xBFA qui\xE9n golpe\xF3?"
+    - "Al chico ese, Juan y luego tambi\xE9n sin querer le di al hijo de los due\xF1os."
+    turnosNudillos: 01000000000000000100000000000000
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora se fue a dormir?"
+    - "Despu\xE9s de la cena me march\xE9 a la habitaci\xF3n.\r\n"
+    - "Paco sali\xF3 sobre la 1:30 porque quer\xEDa airearse.\r\n"
+    - "Yo me enter\xE9 y vi que tardaba mucho en volver.\r As\xED que me levant\xE9
+      para buscarle"
+    - "\xBFQu\xE9 hizo despu\xE9s de que se encontrara el primer cuerpo?"
+    - "Como los dem\xE1s jornaleros, sal\xED a fumar al porche."
+    - "\xBFNot\xF3 algo raro?"
+    - "\u2026\r\n"
+    - No
+    turnosHoraEstandar: 010000000000000000000000000000000100000000000000010000000000000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta:
+    - Tenemos malas noticias caballero. Hemos encontrado el cuerpo de su hermano
+      en el fondo del pozo
+    - "\xBFC\xF3mo es eso posible? \xBFCu\xE1ndo ha podido ocurrir?"
+    - "Nos has dicho que estaba en la cena, asi que ha debido ser esta noche. T\xFA
+      mismo nos has dicho que sali\xF3 al patio tras la cena"
+    - "Adem\xE1s nos han comentado que estabais un poco borrachos, y creemos que
+      la ca\xEDda fue la causa de la muerte"
+    - No descartamos posibilidades, pero creemos que se pudo tratar de un accidente.
+    - "\xA1NO, ESO ES IMPOSIBLE! ESTOY SEGURO DE QUE FUERON ESOS EXCURSIONISTAS!"
+    - "\xA1SEGURO QUE PUDO SER JOSE MANUEL, \xC9L SIGUI\xD3 DESPIERTO HASTA TARDE!"
+    - "\xBFY c\xF3mo sabe eso usted exactamente?"
+    - ...
+    - "\xBFSe han acabado sus acusaciones ya Don Miguel \xC1ngel?"
+    - Yo...
+    - "Tal vez se cayera pens\xE1ndolo mejor..."
+    - "Muchas gracias por la informaci\xF3n, nos ha sido bastante \xFAtil. "
+    - "Por favor, qu\xE9dese por aqu\xED cerca por si necesit\xE1ramos hacerle m\xE1s
+      preguntas"
+    turnosChaqueta: 0100000000000000010000000100000001000000000000000000000001000000000000000100000000000000000000000100000001000000
+--- !u!114 &1389693917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cff94fb3b9d4b94190d0b2214c9f1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1389693916}
+--- !u!65 &1389693918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1389693919
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1389693920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389693914}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1701654198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +3780,409 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &1730441640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730441646}
+  - component: {fileID: 1730441645}
+  - component: {fileID: 1730441644}
+  - component: {fileID: 1730441643}
+  - component: {fileID: 1730441641}
+  - component: {fileID: 1730441647}
+  m_Layer: 0
+  m_Name: Timoteo Pinheiro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1730441641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - Timoteo Pinheiro
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion:
+    - "\xBFPodr\xEDa explicarme que ha ocurrido?"
+    - 'Durante a noite houve uma briga. Depois do jantar fomos dormir. '
+    - Acordamos quando soubemos que havia uma morte.
+    - "\xBFHa dicho que se levantaron despues de encontrar al muerto?"
+    - Sim
+    - "\xBFEntonces se fueron a dormir todos despu\xE9s de la cena?"
+    - "Todos n\xF3s fomos dormir, mas n\xE3o sei o que os irm\xE3os P\xE9rez fizeram.\r\n"
+    - "\xBFQu\xE9 hac\xEDa usted cuando encontraron el cuerpo?"
+    - "Todos os diaristas sa\xEDram para fumar depois de encontrar o primeiro cad\xE1ver. 
+      \n"
+    - "Todos n\xF3s fomos dar uma volta na entrada. Embora pouco antes do tiro Dr\u017Eislav
+      saiu e nunca mais voltou.\r"
+    - "\xBFNot\xF3 usted algo raro despu\xE9s de encontrar el primer cuerpo?\n"
+    - "Don Miguel \xC1ngel parecia muito nervoso e preocupado. "
+    - " Ele n\xE3o falou por um tempo."
+    turnosIdentificacion: 01000000000000000000000001000000000000000100000000000000010000000000000000000000010000000000000000000000
+    sentences:
+    - Buenas noches caballero
+    - Boa noite
+    - "\xBFPuede identificarse?"
+    - "Meu nome \xE9 Timoteo Pinheiro"
+    - "\xBFPerdone?"
+    - "Meu nome \xE9 Timoteo Pinheiro"
+    - "Ah, es usted portugu\xE9s"
+    - Sim
+    turnosBasic: 0100000000000000010000000000000001000000000000000100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!65 &1730441643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1730441644
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1730441645
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1730441646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -495.6288, y: -101.435234, z: -4.2278223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730441647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730441640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc029cfb37363a443b8e9ad50bbc8373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1730441641}
+--- !u!1 &1768938296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768938297}
+  - component: {fileID: 1768938302}
+  - component: {fileID: 1768938301}
+  - component: {fileID: 1768938300}
+  - component: {fileID: 1768938299}
+  - component: {fileID: 1768938298}
+  m_Layer: 0
+  m_Name: "Ana Rinc\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1768938297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -496.41, y: -99.98, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255838177}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768938298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - "Ana Rinc\xF3n"
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion:
+    - "\xBFNo llevas una chaqueta demasiado grande?"
+    - "\u2026\r\n"
+    - "Esta chaqueta es de mi hermano.\r Ten\xEDa fr\xEDo y me la dio.\r\n"
+    - "\xBFHas salido durante la noche?"
+    - "Sal\xED un momento durante un rato, un rato antes del disparo.\r Me olvid\xE9
+      mi chaqueta dentro de la habitaci\xF3n."
+    turnosIdentificacion: 0100000000000000000000000100000000000000
+    sentences:
+    - "Buenas noches se\xF1orita.\r\n\xBFPuede identificarse?"
+    - "Me llamo Ana Rinc\xF3n y soy una excursionista."
+    turnosBasic: 0100000000000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar:
+    - "\xBFA qu\xE9 hora te fuiste a dormir?"
+    - "Me qued\xE9 con Jose Manuel hasta tarde"
+    - "\xBFHasta qu\xE9 hora?\t"
+    - "Sobre la 1:30, me fui sola.\r Jose Manuel se qued\xF3 un rato m\xE1s"
+    - "\xBFFue la \xFAltima vez que le viste?"
+    - "No.\r Chema entr\xF3 a la habitaci\xF3n al rato, pero no lleg\xF3 a acostarse\n"
+    - "Cuando entr\xF3 a la habitaci\xF3n, son\xF3 un ruido fuerte fuera, Chema se
+      di\xF3 la vuelta y ya no volvi\xF3\n\n"
+    - "A m\xED me costaba dormir as\xED que cuando vi que hab\xEDa pasado un rato
+      y no estaba decid\xED levantarme para buscarlo\n\n\n"
+    - "En la sala de estar vi a Don Miguel \xC1ngel entrando desde el patio al albergue"
+    - "Un poco m\xE1s tarde fue cuando encontramos el cuerpo de Jose Manuel en la
+      despensa"
+    turnosHoraEstandar: 01000000000000000100000000000000010000000000000000000000000000000000000000000000
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel:
+    - "\xBFLlegaste a hablar con Don Miguel \xC1ngel?"
+    - "En la sala de estar me lo cruc\xE9 entrando desde el patio al albergue\n"
+    - "Me dijo que su hermano, Don Francisco, no aparec\xEDa.\r Parec\xEDa muy nervioso.\n\n"
+    - "Poco despu\xE9s lleg\xF3 la familia de los propietarios preguntando"
+    turnosAnaMiguel: 01000000000000000000000000000000
+    sentencesChaqueta:
+    - "\xBFEsta chaqueta es tuya?"
+    - ...
+    - "S\xED"
+    - "\xBFPor qu\xE9 estaba en el pozo?\r \xBFY por qu\xE9 est\xE1 llena de sangre?"
+    - "Yo\u2026\r\n"
+    - "No lo s\xE9"
+    - "No parece que est\xE9s herida"
+    - "Alguien tuvo que quitarme la chaqueta. No s\xE9 nada sobre c\xF3mo ha llegado
+      hasta ah\xED"
+    turnosChaqueta: 0100000000000000000000000100000000000000000000000100000000000000
+--- !u!114 &1768938299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71dde68a1164da4498c96b99f76942b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1768938298}
+--- !u!65 &1768938300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1768938301
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1768938302
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768938296}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1828439792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,6 +4283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 749079276}
   mouseSense: 200
+  tmproText: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!114 &1828439797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,7 +4381,77 @@ MonoBehaviour:
   intObjects:
   - {fileID: 643379837}
   personajes:
-  - {fileID: 200314949}
+  - {fileID: 0}
+  libreta: {fileID: 0}
+--- !u!1001 &2083537745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 255838177}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -492.5658
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -101.47532
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7534337
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: edbe15d7936c7fd4cb735e97bc1d450f,
+        type: 3}
+      propertyPath: m_Name
+      value: Josefina
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edbe15d7936c7fd4cb735e97bc1d450f, type: 3}
 --- !u!1 &2135191916
 GameObject:
   m_ObjectHideFlags: 0

@@ -74,7 +74,7 @@ public abstract class PersonajePrueba :  MonoBehaviour, IPersonaje
         {
             Vector3 a = new Vector3(transform.position.x, 0, transform.position.z);
             Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
-            if (Vector3.Distance(a, b) < 4f)
+            if (Vector3.Distance(a, b) < 6f)
             {
                 Talk();
             }
