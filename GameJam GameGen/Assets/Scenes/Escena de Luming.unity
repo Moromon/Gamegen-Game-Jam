@@ -10864,6 +10864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2864566350886120410, guid: 113618444d6e7bd4f8ed47890e000c95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6190105022151053828, guid: 113618444d6e7bd4f8ed47890e000c95,
         type: 3}
       propertyPath: m_RootOrder
@@ -11962,6 +11967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puerta (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2864566350886120410, guid: 113618444d6e7bd4f8ed47890e000c95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6190105022151053828, guid: 113618444d6e7bd4f8ed47890e000c95,
         type: 3}
@@ -17234,7 +17244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1705854006
 PrefabInstance:
@@ -17633,7 +17643,7 @@ Transform:
   - {fileID: 1069148500}
   - {fileID: 217602750}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &1775405933
 PrefabInstance:
@@ -18863,12 +18873,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844783240}
   m_LocalRotation: {x: -0, y: -0, z: -0.2724654, w: 0.96216565}
-  m_LocalPosition: {x: -64.88, y: 59.16, z: -10.57}
-  m_LocalScale: {x: 1, y: 1, z: 0.6149}
+  m_LocalPosition: {x: -0.3988, y: -0.0085, z: -0.21029605}
+  m_LocalScale: {x: 0.0032778129, y: 0.0035198946, z: 0.0024165772}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 249312532}
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -31.622}
 --- !u!1 &1844831897
 GameObject:
@@ -21386,7 +21396,7 @@ Transform:
   - {fileID: 8760795012550238504}
   - {fileID: 749440915627220069}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &5039782914055671148
 MeshFilter:
