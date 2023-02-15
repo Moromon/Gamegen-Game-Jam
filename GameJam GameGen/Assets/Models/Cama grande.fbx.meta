@@ -3,7 +3,17 @@ guid: bfef4ee4446aa7948be6482f3306ccd8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_nor_gl_2k
+    second: {fileID: 2800000, guid: 9d1806b2661df5e4c9afa962e028fe62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark_wood_rough_2k
+    second: {fileID: 2800000, guid: a5987fae8cf00874eb7a01466b9ff464, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

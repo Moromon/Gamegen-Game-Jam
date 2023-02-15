@@ -94,11 +94,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -678588488315902003, guid: 6583b6cefb192ac4196dcc29779b2ed1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61722a49890ea0f409e2c47a2849282c, type: 2}
     - target: {fileID: 919132149155446097, guid: 6583b6cefb192ac4196dcc29779b2ed1,
         type: 3}
       propertyPath: m_Name
       value: Litera escalera recta
       objectReference: {fileID: 0}
+    - target: {fileID: 8567717000986892130, guid: 6583b6cefb192ac4196dcc29779b2ed1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61722a49890ea0f409e2c47a2849282c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6583b6cefb192ac4196dcc29779b2ed1, type: 3}
 --- !u!1 &2114638683951951169 stripped
