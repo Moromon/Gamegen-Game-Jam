@@ -102,7 +102,7 @@ public class Door : MonoBehaviour
     {
         Quaternion startRot = transform.rotation;
         Quaternion endRot = Quaternion.Euler(startRotation);
-        AudioManager.instance.Stop("doorOp");
+        AudioManager.instance.Stop("doorOP");
         AudioManager.instance.Play("doorClose");
 
         abierta = false;

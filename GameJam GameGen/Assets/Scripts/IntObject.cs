@@ -12,6 +12,8 @@ public class IntObject : PersonajePrueba, ISubject<int>
     public bool investigado;
     public bool highlighted;
 
+    public GameObject padre;
+
     private List<IObserver<int>> _observers = new List<IObserver<int>>();
 
     public void AddObserver(IObserver<int> observer)
@@ -50,6 +52,10 @@ public class IntObject : PersonajePrueba, ISubject<int>
     {
         NotifyObservers();
         trigger.TriggerDialogue(this);
+        if(nameObj == "PuertaSótano")
+        {
+            Destroy(padre);
+        }
     }
 
     public override void Updated(string s)
