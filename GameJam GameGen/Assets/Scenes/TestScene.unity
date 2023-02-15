@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1864,11 +1864,11 @@ MonoBehaviour:
     - "Los \xFAnicos que se quedaron despiertos fueron Jose Manuel y Ana.\r\n\r"
     - "Ya veo\n\r"
     - "Despu\xE9s nos despertamos al o\xEDr jaleo en el sal\xF3n de madrugada.\r\n\n\n"
-    - "Jose, Mar\xEDa Isabel, Chuso y yo fuimos a ver qu\xE9 pasaba.\r Juan se qued\xF3
-      dormido y faltaban Chema y Ana.\r"
+    - "Jose, Mar\xEDa Isabel, Chuso y yo fuimos a ver qu\xE9 pasaba. Juan se qued\xF3
+      dormido y faltaban Chema y Ana"
     - "\xBFQui\xE9n estaba en el sal\xF3n?"
-    - "La familia propietaria, Don Miguel \xC1ngel y Ana.\r Cuando sal\xED de la
-      habitaci\xF3n sal\xED descalza y pis\xE9 algo h\xFAmedo.\r\n"
+    - "La familia propietaria, Don Miguel \xC1ngel y Ana. Cuando sal\xED de la habitaci\xF3n
+      sal\xED descalza y pis\xE9 algo h\xFAmedo"
     - "M\xE1s tarde me he dado cuenta de que era un charco de sangre.\n"
     - "\xBFEl que se encuentra aqu\xED, al lado del pasillo?"
     - "S\xED"
@@ -1883,16 +1883,16 @@ MonoBehaviour:
     turnosAnaTestigoMiguel: 
     sentencesApareceJoseManuel:
     - "\xBFC\xF3mo encontrasteis el cad\xE1ver de vuestro amigo?"
-    - "Nos despertamos de madrugada por o\xEDr barullo fuera de la habitaci\xF3n\n"
+    - "Nos despertamos de madrugada por o\xEDr barullo fuera de la habitaci\xF3n"
     - "Cuando vi la situaci\xF3n present\xED que algo estaba mal, as\xED que avis\xE9
-      a Josel\xEDn\n"
+      a Josel\xEDn"
     - "Despu\xE9s de que Don Miguel y Pedro salieran al exterior, decid\xED investigar
       con Josel\xEDn y\u2026 "
     - bueno encontramos a Jose Manuel colgado en la despensa
     - "\xBFSospechas de alguien?"
     - "No lo s\xE9\u2026\r\n\n"
     - "Nadie ten\xEDa motivos para hacerle nada.\r Precisamente Jose Manuel no se
-      llevaba a matar con nadie\r"
+      llevaba a matar con nadie"
     - "\xBFHay alguien que s\xED se llevara a matar?"
     - "Bueno\u2026"
     - "Para esclarecer lo ocurrido esta informaci\xF3n puede ser \xFAtil"
@@ -14372,6 +14372,7 @@ MonoBehaviour:
   dropDown6: {fileID: 1549935486}
   dropDown7: {fileID: 1891377330}
   dropDown8: {fileID: 1851360919}
+  soluciones: 
 --- !u!114 &949309855
 MonoBehaviour:
   m_ObjectHideFlags: 0
