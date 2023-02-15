@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
             bool written = false;
             if (!bto1onUse)
             {
-                bto1.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto1.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto1onUse = true;
                 bto1.gameObject.SetActive(true);
                 _dButton1 = _dialogue.sentencesChaqueta;
@@ -103,7 +103,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (!bto2onUse && !written)
             {
-                bto2.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto2.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto2onUse = true;
                 bto2.gameObject.SetActive(true);
                 _dButton2 = _dialogue.sentencesChaqueta;
@@ -112,7 +112,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (!bto3onUse && !written)
             {
-                bto3.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto3.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto3onUse = true;
                 bto3.gameObject.SetActive(true);
                 _dButton3 = _dialogue.sentencesChaqueta;
@@ -121,7 +121,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (!bto4onUse && !written)
             {
-                bto4.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto4.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto4onUse = true;
                 bto4.gameObject.SetActive(true);
                 _dButton4 = _dialogue.sentencesChaqueta;
@@ -130,7 +130,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (!bto5onUse && !written)
             {
-                bto5.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto5.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto5onUse = true;
                 bto5.gameObject.SetActive(true);
                 _dButton5 = _dialogue.sentencesChaqueta;
@@ -139,7 +139,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (!bto6onUse && !written)
             {
-                bto6.GetComponentInChildren<TextMeshProUGUI>().text = "Chaqueta";
+                bto6.GetComponentInChildren<TextMeshProUGUI>().text = "Pozo";
                 bto6onUse = true;
                 bto6.gameObject.SetActive(true);
                 _dButton6 = _dialogue.sentencesChaqueta;

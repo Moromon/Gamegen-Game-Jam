@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1457,6 +1457,189 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62506479}
   m_CullTransparentMesh: 1
+--- !u!1 &63143198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63143199}
+  - component: {fileID: 63143204}
+  - component: {fileID: 63143203}
+  - component: {fileID: 63143202}
+  - component: {fileID: 63143201}
+  - component: {fileID: 63143200}
+  m_Layer: 0
+  m_Name: Crucifijo
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &63143199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.14, y: 3.4878225, z: -10.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63143200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "\xBFQu\xE9 pinta un crucifijo tirado en mitad del patio?"
+    - "Esa es una gran pregunta, Prieto. Si te fijas el farol est\xE1 junto al crucifijo"
+    - Y eso significa...
+    - Que Pedro estaba, o dejando o recogiendo el crucifijo del suelo
+    - "Apostar\xEDa por lo segundo"
+    turnosBasic: 0100000002000000010000000200000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &63143201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 63143200}
+  nameObj: Crucifijo
+  id: 4
+  description: Esto es un crucifijo
+  investigado: 0
+  highlighted: 0
+--- !u!65 &63143202
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &63143203
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &63143204
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63143198}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &65605698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1810,7 @@ RectTransform:
   m_Children:
   - {fileID: 960660581}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1700,7 +1883,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &78991831
 GameObject:
@@ -1778,6 +1961,192 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78991831}
   m_CullTransparentMesh: 1
+--- !u!1 &80095951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80095952}
+  - component: {fileID: 80095957}
+  - component: {fileID: 80095956}
+  - component: {fileID: 80095955}
+  - component: {fileID: 80095954}
+  - component: {fileID: 80095953}
+  m_Layer: 0
+  m_Name: "Puerta S\xF3tano"
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &80095952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.344, y: 3.4878225, z: -11.896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80095953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Esto parece la entrada al s\xF3tano"
+    - "Despu\xE9s de ti"
+    - '*Intenta abrir la puerta*'
+    - "Mierda, parece que est\xE1 cerrada por dentro. Tal vez alguien se haya quedado
+      encerrado aqu\xED dentro"
+    - "D\xE9jeme a mi, tratar\xE9 de abrir la puerta"
+    - '*La cerradura se abre*'
+    - "Buen trabajo Mart\xEDnez"
+    turnosBasic: 01000000020000000100000001000000020000000000000001000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &80095954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 80095953}
+  nameObj: "PuertaS\xF3tano"
+  id: 9
+  description: "Esto es una mesa (definitivamente) en un s\xF3tano"
+  investigado: 0
+  highlighted: 0
+--- !u!65 &80095955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &80095956
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &80095957
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80095951}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &81726491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2608,7 @@ RectTransform:
   - {fileID: 776989055}
   - {fileID: 214959602}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3742,7 +4111,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &200314950
 MonoBehaviour:
@@ -3952,8 +4321,16 @@ MonoBehaviour:
     turnosChusoSotano: 
     sentencesAnaMiguel: []
     turnosAnaMiguel: 
-    sentencesChaqueta: []
-    turnosChaqueta: 
+    sentencesChaqueta:
+    - "Hemos encontrado el cuerpo de su cu\xF1ado, Francisco P\xE9rez, dentro del
+      pozo. Parece que muri\xF3 al caer dentro"
+    - "\xBFVen? Otra prueba m\xE1s contra los excursionistas. Seguro que fueron ellos"
+    - "\xBFEn qu\xE9 se basa para esa acusaci\xF3n tan grave?"
+    - "No necesito basarme en nada, es evidente. Usted como inspector deber\xEDa
+      verlo al instante"
+    - "Por favor, deje a los profesionales hacer nuestro trabajo y abst\xE9ngase
+      de hacer acusaciones en vano"
+    turnosChaqueta: 0100000000000000010000000000000002000000
 --- !u!114 &203256140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4611,7 +4988,7 @@ Transform:
   - {fileID: 95655069}
   - {fileID: 203256138}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &271652702
 GameObject:
@@ -4762,7 +5139,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -102.7, y: -84.578}
-  m_SizeDelta: {x: 93.0006, y: 22.5556}
+  m_SizeDelta: {x: 200, y: 22.5556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284946742
 MonoBehaviour:
@@ -4804,23 +5181,49 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 284946743}
-  m_Template: {fileID: 701461911}
-  m_CaptionText: {fileID: 416674439}
+  m_TargetGraphic: {fileID: 1668658505}
+  m_Template: {fileID: 1111558188}
+  m_CaptionText: {fileID: 761697613}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 1634004356}
+  m_ItemText: {fileID: 1191506099}
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: Cuchilllo
+    - m_Text: Timoteo Pinheiro
       m_Image: {fileID: 0}
-    - m_Text: Navaja
+    - m_Text: "Miguel R\xEDos"
       m_Image: {fileID: 0}
-    - m_Text: Crucifijo
+    - m_Text: "Jos\xE9 Rodr\xEDguez"
+      m_Image: {fileID: 0}
+    - m_Text: Josefina Esparza
+      m_Image: {fileID: 0}
+    - m_Text: "Jes\xFAs Manuel Guijarro"
+      m_Image: {fileID: 0}
+    - m_Text: "Catalina Mes\xEDas"
+      m_Image: {fileID: 0}
+    - m_Text: "Ana Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Juan Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Pedro R\xEDos Esparza"
+      m_Image: {fileID: 0}
+    - m_Text: Maria Isabel Montiel
+      m_Image: {fileID: 0}
+    - m_Text: Jose Manuel Azuaga
+      m_Image: {fileID: 0}
+    - m_Text: "Francisco P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Miguel \xC1ngel P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Gonzalo Su\xE1rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Mar\xEDa Jos\xE9 Espinoza"
+      m_Image: {fileID: 0}
+    - m_Text: "Dr\u017Eislav Kova\u010Devi\u0107"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4998,6 +5401,48 @@ RectTransform:
   m_AnchoredPosition: {x: -303, y: -151.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &288563198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288563199}
+  m_Layer: 0
+  m_Name: Objetos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &288563199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288563198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2542553, y: -3.4878225, z: 4.079306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1681485847}
+  - {fileID: 643379836}
+  - {fileID: 878249696}
+  - {fileID: 63143199}
+  - {fileID: 874949882}
+  - {fileID: 1369728510}
+  - {fileID: 1968951491}
+  - {fileID: 1495393528}
+  - {fileID: 1038783799}
+  - {fileID: 80095952}
+  - {fileID: 1584170189}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &292843833
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,7 +9643,7 @@ GameObject:
   - component: {fileID: 643379837}
   - component: {fileID: 643379838}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Escopeta
   m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9274,13 +9719,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643379832}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.52}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2542553, y: 3.4878225, z: 2.4406939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &643379837
 MonoBehaviour:
@@ -9295,9 +9740,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 643379838}
-  nameObj: Pistola
+  nameObj: Escopeta
   id: 0
-  description: Esto es una pistola
+  description: Esto es una escopeta
   investigado: 0
   highlighted: 0
 --- !u!114 &643379838
@@ -9320,11 +9765,13 @@ MonoBehaviour:
     sentencesIdentificacion: []
     turnosIdentificacion: 
     sentences:
-    - "Que opinas de esta pistola Mart\xEDnez?"
-    - Es una pipa to guapa la verdad, tiene pinta de que el que la usa controla
-    - Tienes to la razon enverda, esta flama
-    - '*nods*'
-    turnosBasic: 01000000020000000100000002000000
+    - "Esta debe ser la escopeta del due\xF1o del albergue"
+    - Tiene pinta. *Agarra la escopeta*
+    - "S\xF3lo le falta un cartucho. Fue un disparo limpio y sin ensa\xF1amiento"
+    - "Creo que un disparo a quemarropa con una escopeta es en cierto modo ensa\xF1arse"
+    - "Quiz\xE1 Pedro se llevaba mal con alg\xFAn hu\xE9sped. De cualquier manera,
+      quien lo hizo dej\xF3 aqu\xED tirada la escopeta"
+    turnosBasic: 0100000002000000020000000100000002000000
     sentencesEscopeta: []
     turnosEscopeta: 
     sentecesPistola: []
@@ -9485,7 +9932,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651648456
 GameObject:
@@ -10800,7 +11247,7 @@ RectTransform:
   m_Children:
   - {fileID: 816243225}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11388,7 +11835,7 @@ Transform:
   m_Children:
   - {fileID: 1828439795}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &749079277
 CharacterController:
@@ -11432,7 +11879,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 03cd582151c7f7045953cb01170d6824,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03cd582151c7f7045953cb01170d6824,
         type: 3}
@@ -12999,6 +13446,398 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868749349}
   m_CullTransparentMesh: 1
+--- !u!1 &874949881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874949882}
+  - component: {fileID: 874949887}
+  - component: {fileID: 874949886}
+  - component: {fileID: 874949885}
+  - component: {fileID: 874949884}
+  - component: {fileID: 874949883}
+  m_Layer: 0
+  m_Name: Pozo
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &874949882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.86, y: 3.4878225, z: -10.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &874949883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Joder, aqu\xED dentro hay otro cuerpo. Parece el desaparecido Francisco P\xE9rez"
+    - "Y a este lo han tirado por un pozo. Deber\xEDamos sacarlo"
+    - "No tenemos nada para sacar el cuerpo y la cuerda del cubo no aguantar\xEDa
+      el peso me temo"
+    - "Entonces, \xBFqu\xE9 hacemos?"
+    - Intentar analizar desde aqui lo que podamos. Acerca el farol
+    - "\xBFVes algo?"
+    - "Hmm, dir\xEDa que muri\xF3 por la ca\xEDda"
+    - "\xBFC\xF3mo puedes saber eso sin mirar de cerca el cuerpo?"
+    - "Porque su cuello esta describiendo un \xE1ngulo de unos 140 grados respecto
+      a su pecho"
+    - "Hasta un palurdo deber\xEDa darse cuenta de eso, Prieto"
+    - "\xBFEntonces, alguien le tir\xF3?"
+    - "Es una posibilidad. Tambi\xE9n puede haberse ca\xEDdo \xE9l solo"
+    - "\xBFCrees que pudo caerse?"
+    - "Nos han dicho que los hermanos estaban borrachos en la cena, as\xED que resulta
+      plausible"
+    - "Un segundo Mart\xEDnez, sube el cubo"
+    - "A sus \xF3rdenes. *Sube el cubo*"
+    - "\xBFQu\xE9 es esto? Parece una chaqueta. De mujer, es muy peque\xF1a"
+    - "Y est\xE1 manchada de sangre"
+    turnosBasic: 010000000100000002000000010000000200000001000000020000000100000002000000020000000100000002000000010000000200000001000000020000000100000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &874949884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 0}
+  nameObj: Pozo
+  id: 5
+  description: Esto es un Pozo
+  investigado: 0
+  highlighted: 0
+--- !u!65 &874949885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &874949886
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &874949887
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874949881}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &878249695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878249696}
+  - component: {fileID: 878249701}
+  - component: {fileID: 878249700}
+  - component: {fileID: 878249699}
+  - component: {fileID: 878249698}
+  - component: {fileID: 878249697}
+  m_Layer: 0
+  m_Name: CuerpoPedro
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &878249696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2542553, y: 3.4878225, z: -10.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &878249697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Este debe ser Pedro, el hijo de los due\xF1os. \xBFQu\xE9 opinas, Mart\xEDnez?"
+    - Definitivamente este hombre esta muerto Prieto
+    - "\xBFPuedes decirme algo \xFAtil?"
+    - Hmm. Por lo que veo le dispararon a quemarropa por la espalda.
+    - "Tiene la nariz rota, \xBFno? Quiz\xE1 hubo un forcejeo antes del disparo"
+    - "Si se hubiese peleado con alguien antes de morir habr\xEDa m\xE1s marcas de
+      ello"
+    - "Adem\xE1s, es posible que alguien les hubiera o\xEDdo"
+    - "Entonces, \xBFqu\xE9 crees que ha pasado?"
+    - "Es probable que Pedro se estuviera dirigiendo hacia el pozo por alg\xFAn motivo.
+      Tal vez buscando algo o a alguien"
+    - "Me arriesgar\xEDa a decir que Pedro estaba agachado cuando muri\xF3. El asesino
+      aprovech\xF3 para dispararle"
+    - "Las articulaciones no est\xE1n r\xEDgidas, el cad\xE1ver es reciente. No m\xE1s
+      de una hora"
+    turnosBasic: 01000000020000000100000002000000010000000200000002000000010000000200000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &878249698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 0}
+  nameObj: CadaverPedro
+  id: 3
+  description: "Cad\xE1ver de Pedro"
+  investigado: 0
+  highlighted: 0
+--- !u!65 &878249699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &878249700
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &878249701
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878249695}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &881666463
 GameObject:
   m_ObjectHideFlags: 0
@@ -14810,7 +15649,7 @@ RectTransform:
   m_Children:
   - {fileID: 950398924}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15636,6 +16475,193 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3952231572300330341, guid: b659385244593f442b704b2a7245f41a, type: 3}
+--- !u!1 &1038783798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038783799}
+  - component: {fileID: 1038783804}
+  - component: {fileID: 1038783803}
+  - component: {fileID: 1038783802}
+  - component: {fileID: 1038783801}
+  - component: {fileID: 1038783800}
+  m_Layer: 0
+  m_Name: MesaSotano
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1038783799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.918, y: 3.4878225, z: -8.873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038783800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "Mart\xEDnez, mira esto"
+    - Es una mesa
+    - Es definitivamente una mesa
+    - "Y adem\xE1s, est\xE1 debajo de la ventana, que casualmente est\xE1 abierta"
+    - "Y es, casualmente, la \xFAnica salida de est\xE9 sotano aparte de la puerta"
+    - "\xBFQu\xE9 insin\xFAas, Prieto?"
+    - "Elemental, querido Mart\xEDnez. El asesino de Maria Isabel tuvo que salir
+      por la ventana usando la mesa como apoyo"
+    - Ya veo
+    turnosBasic: 0100000002000000010000000100000001000000020000000100000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1038783801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1038783800}
+  nameObj: MesaSotano
+  id: 8
+  description: "Esto es una mesa (definitivamente) en un s\xF3tano"
+  investigado: 0
+  highlighted: 0
+--- !u!65 &1038783802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1038783803
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1038783804
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038783798}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1042927703
 GameObject:
   m_ObjectHideFlags: 0
@@ -16182,7 +17208,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111558187
 GameObject:
@@ -17274,7 +18300,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 288563199}
     m_Modifications:
     - target: {fileID: -9182217225944895262, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
@@ -17289,7 +18315,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
@@ -17309,17 +18335,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2662
+      value: 5.5204554
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.563
+      value: 2.9248226
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.6443
+      value: 0.56499386
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
@@ -17329,17 +18355,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
         type: 3}
@@ -17566,7 +18592,7 @@ MonoBehaviour:
     - Esa soga estaba intacta antes de irnos a dormir
     - "Me fij\xE9 que estaba cortada cuando dej\xE9 la escopeta junto a la puerta,
       no me acord\xE9 de dec\xEDrselo antes"
-    turnosSoga: 
+    turnosSoga: 010000000000000000000000
     sentencesCuchillo: []
     turnosCuchillo: 
     sentencesMoraton: []
@@ -20386,6 +21412,203 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1 &1369728509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369728510}
+  - component: {fileID: 1369728515}
+  - component: {fileID: 1369728514}
+  - component: {fileID: 1369728513}
+  - component: {fileID: 1369728512}
+  - component: {fileID: 1369728511}
+  m_Layer: 0
+  m_Name: CuerpoMariaIsabel
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1369728510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.422, y: 3.4878225, z: -8.873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369728511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - Mierda
+    - Otro cuerpo. Perfecto
+    - "\xBFQu\xE9 co\xF1o ha pasado en este albergue?"
+    - "Todav\xEDa no lo sabemos, pero se nos multiplican los cad\xE1veres"
+    - "Ponte a investigar el cuerpo a ver de qu\xE9 muri\xF3"
+    - "Antes de nada, \xBFno te parece que algo no encaja?"
+    - "La puerta estaba cerrada por dentro y no parece que haya m\xE1s salidas"
+    - "No ten\xEDamos suficiente con los dem\xE1s muertos, ahora tenemos un asesinato
+      a puerta cerrada. La noche no deja de mejorar"
+    - "Tiene que haber otra salida. En fin, que puedes contarme sobre el cad\xE1ver"
+    - "Esta mujer ha muerto despu\xE9s de recibir una pu\xF1alada. Debe ser la desaparecida
+      Maria Isabel"
+    - "\xBFS\xF3lo una?"
+    - "S\xF3lo una"
+    - "\xBFHabr\xE1 sido un suicidio?"
+    - "\xBFUn suicidio con una pu\xF1alada por la espalda? Lo dudo. Adem\xE1s la
+      sangre sigue fresca. "
+    - Esta chica fue asesinada hace menos de una hora, probablemente tras la llamada
+    - "Antes de salir del s\xF3tano, aseg\xFArate de inspeccionarlo todo bien Prieto"
+    turnosBasic: 01000000020000000100000002000000010000000200000002000000010000000100000002000000010000000200000001000000020000000200000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1369728512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1369728511}
+  nameObj: CuerpoMariaIsabel
+  id: 6
+  description: Esto es un cuerpo
+  investigado: 0
+  highlighted: 0
+--- !u!65 &1369728513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1369728514
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1369728515
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369728509}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1371636327
 GameObject:
   m_ObjectHideFlags: 0
@@ -20520,7 +21743,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389693914
 GameObject:
@@ -20644,8 +21867,26 @@ MonoBehaviour:
     turnosChusoSotano: 
     sentencesAnaMiguel: []
     turnosAnaMiguel: 
-    sentencesChaqueta: []
-    turnosChaqueta: 
+    sentencesChaqueta:
+    - Tenemos malas noticias caballero. Hemos encontrado el cuerpo de su hermano
+      en el fondo del pozo
+    - "\xBFC\xF3mo es eso posible? \xBFCu\xE1ndo ha podido ocurrir?"
+    - "Nos has dicho que estaba en la cena, asi que ha debido ser esta noche. T\xFA
+      mismo nos has dicho que sali\xF3 al patio tras la cena"
+    - "Adem\xE1s nos han comentado que estabais un poco borrachos, y creemos que
+      la ca\xEDda fue la causa de la muerte"
+    - No descartamos posibilidades, pero creemos que se pudo tratar de un accidente.
+    - "\xA1NO, ESO ES IMPOSIBLE! ESTOY SEGURO DE QUE FUERON ESOS EXCURSIONISTAS!"
+    - "\xA1SEGURO QUE PUDO SER JOSE MANUEL, \xC9L SIGUI\xD3 DESPIERTO HASTA TARDE!"
+    - "\xBFY c\xF3mo sabe eso usted exactamente?"
+    - ...
+    - "\xBFSe han acabado sus acusaciones ya Don Miguel \xC1ngel?"
+    - Yo...
+    - "Tal vez se cayera pens\xE1ndolo mejor..."
+    - "Muchas gracias por la informaci\xF3n, nos ha sido bastante \xFAtil. "
+    - "Por favor, qu\xE9dese por aqu\xED cerca por si necesit\xE1ramos hacerle m\xE1s
+      preguntas"
+    turnosChaqueta: 0100000000000000010000000100000001000000000000000000000001000000000000000100000000000000000000000100000001000000
 --- !u!114 &1389693917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21391,6 +22632,186 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494226365}
   m_CullTransparentMesh: 1
+--- !u!1 &1495393527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495393528}
+  - component: {fileID: 1495393533}
+  - component: {fileID: 1495393532}
+  - component: {fileID: 1495393531}
+  - component: {fileID: 1495393530}
+  - component: {fileID: 1495393529}
+  m_Layer: 0
+  m_Name: CadenaOro
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1495393528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.344, y: 3.4878225, z: -8.873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495393529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - Inspector Prieto
+    - "Forense Mart\xEDnez"
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - "\xBFEsta cadena es de la v\xEDctima?"
+    - "Podr\xEDa serlo. Tambi\xE9n podr\xEDa ser de este joyero de esta caja"
+    turnosBasic: 0100000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1495393530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1495393529}
+  nameObj: CadenaOro
+  id: 7
+  description: Esto es una cadena de oro
+  investigado: 0
+  highlighted: 0
+--- !u!65 &1495393531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1495393532
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1495393533
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495393527}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1495656782
 GameObject:
   m_ObjectHideFlags: 0
@@ -22228,7 +23649,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -102.7, y: -84.578}
-  m_SizeDelta: {x: 93.0006, y: 22.5556}
+  m_SizeDelta: {x: 200, y: 22.5556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1549935486
 MonoBehaviour:
@@ -22270,23 +23691,49 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1549935487}
-  m_Template: {fileID: 1876458902}
-  m_CaptionText: {fileID: 1508011947}
+  m_TargetGraphic: {fileID: 1668658505}
+  m_Template: {fileID: 1111558188}
+  m_CaptionText: {fileID: 761697613}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 1845819484}
+  m_ItemText: {fileID: 1191506099}
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: Cuchilllo
+    - m_Text: Timoteo Pinheiro
       m_Image: {fileID: 0}
-    - m_Text: Navaja
+    - m_Text: "Miguel R\xEDos"
       m_Image: {fileID: 0}
-    - m_Text: Crucifijo
+    - m_Text: "Jos\xE9 Rodr\xEDguez"
+      m_Image: {fileID: 0}
+    - m_Text: Josefina Esparza
+      m_Image: {fileID: 0}
+    - m_Text: "Jes\xFAs Manuel Guijarro"
+      m_Image: {fileID: 0}
+    - m_Text: "Catalina Mes\xEDas"
+      m_Image: {fileID: 0}
+    - m_Text: "Ana Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Juan Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Pedro R\xEDos Esparza"
+      m_Image: {fileID: 0}
+    - m_Text: Maria Isabel Montiel
+      m_Image: {fileID: 0}
+    - m_Text: Jose Manuel Azuaga
+      m_Image: {fileID: 0}
+    - m_Text: "Francisco P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Miguel \xC1ngel P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Gonzalo Su\xE1rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Mar\xEDa Jos\xE9 Espinoza"
+      m_Image: {fileID: 0}
+    - m_Text: "Dr\u017Eislav Kova\u010Devi\u0107"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22688,6 +24135,201 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574881682}
   m_CullTransparentMesh: 1
+--- !u!1 &1584170188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584170189}
+  - component: {fileID: 1584170194}
+  - component: {fileID: 1584170193}
+  - component: {fileID: 1584170192}
+  - component: {fileID: 1584170191}
+  - component: {fileID: 1584170190}
+  m_Layer: 0
+  m_Name: CuerpoChema
+  m_TagString: Selectables
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1584170189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.344, y: 3.4878225, z: -7.014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584170190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4a929beed91840ab3f045ee48bdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    charactersNames:
+    - 
+    - 
+    - 
+    sentencesIdentificacion: []
+    turnosIdentificacion: 
+    sentences:
+    - Mierda, pobre chico
+    - "Parece que las articulaciones se est\xE1n poniendo r\xEDgidas. Llevar\xE1
+      muerto unas dos horas"
+    - "Coincide con lo que sab\xEDamos"
+    - "Lo que me pregunto es por qu\xE9 est\xE1 colgado"
+    - "\xBFDescartamos el suicidio?"
+    - "El chico tiene una contusi\xF3n grave en la nuca. Parece la causa de la muerte"
+    - "Es decir, han colgado el cad\xE1ver para simular un suicidio"
+    - Efectivamente
+    - Joder, ya hay que ser retorcido
+    - "Prieto, si mataras a alguien por accidente, \xBFno te asustar\xEDas?"
+    - "\xBFPor qu\xE9 me preguntas eso?"
+    - Porque el golpe que ha recibido parece ser el de una pelea. Tuvo que ser algo
+      contundente
+    - "El culpable tuvo que darle m\xE1s fuerte de la cuenta sin querer e intent\xF3
+      simular un suicidio"
+    - El objetivo ahora es encontrar el arma del crimen
+    turnosBasic: 0100000002000000010000000200000001000000020000000100000002000000010000000200000001000000020000000200000002000000
+    sentencesEscopeta: []
+    turnosEscopeta: 
+    sentecesPistola: []
+    turnosPistola: 
+    sentencesCrucifijo: []
+    turnosCrucifijo: 
+    sentencesSoga: []
+    turnosSoga: 
+    sentencesCuchillo: []
+    turnosCuchillo: 
+    sentencesMoraton: []
+    turnosMoraton: 
+    sentencesNarizRota: []
+    turnosNarizRota: 
+    sentencesNudillos: []
+    turnosNudillos: 
+    sentencesHerida: []
+    turnosHerida: 
+    sentencesHoraEstandar: []
+    turnosHoraEstandar: 
+    sentencesHoraAna: []
+    turnosHoraAna: 
+    sentencesHoraJoseManuel: []
+    turnosHoraJoseManuel: 
+    sentencesAnaTestigoJoseManuel: []
+    turnosAnaTestigoJoseManuel: 
+    sentencesAnaTestigoMiguel: []
+    turnosAnaTestigoMiguel: 
+    sentencesApareceJoseManuel: []
+    turnosApareceJoseManuel: 
+    sentencesJoseCatalinaParranda: []
+    turnosJoseCatalinaParranda: 
+    sentencesPedroLlamo: []
+    turnosPedroLlamo: 
+    sentencesChusoSotano: []
+    turnosChusoSotano: 
+    sentencesAnaMiguel: []
+    turnosAnaMiguel: 
+    sentencesChaqueta: []
+    turnosChaqueta: 
+--- !u!114 &1584170191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ab845907eb3b745956d36431ea20df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 0}
+  nameObj: CuerpoChema
+  id: 10
+  description: Esto es un cuerpo Chema
+  investigado: 0
+  highlighted: 0
+--- !u!65 &1584170192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1584170193
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68e0b9f041b3f9641a0ef0123c86e833, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1584170194
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584170188}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1586102353
 GameObject:
   m_ObjectHideFlags: 0
@@ -23238,7 +24880,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -102.7, y: -84.578}
-  m_SizeDelta: {x: 93.0006, y: 22.5556}
+  m_SizeDelta: {x: 200, y: 22.5556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668658504
 MonoBehaviour:
@@ -23292,11 +24934,37 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: Cuchilllo
+    - m_Text: Timoteo Pinheiro
       m_Image: {fileID: 0}
-    - m_Text: Navaja
+    - m_Text: "Miguel R\xEDos"
       m_Image: {fileID: 0}
-    - m_Text: Crucifijo
+    - m_Text: "Jos\xE9 Rodr\xEDguez"
+      m_Image: {fileID: 0}
+    - m_Text: Josefina Esparza
+      m_Image: {fileID: 0}
+    - m_Text: "Jes\xFAs Manuel Guijarro"
+      m_Image: {fileID: 0}
+    - m_Text: "Catalina Mes\xEDas"
+      m_Image: {fileID: 0}
+    - m_Text: "Ana Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Juan Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Pedro R\xEDos Esparza"
+      m_Image: {fileID: 0}
+    - m_Text: Maria Isabel Montiel
+      m_Image: {fileID: 0}
+    - m_Text: Jose Manuel Azuaga
+      m_Image: {fileID: 0}
+    - m_Text: "Francisco P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Miguel \xC1ngel P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Gonzalo Su\xE1rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Mar\xEDa Jos\xE9 Espinoza"
+      m_Image: {fileID: 0}
+    - m_Text: "Dr\u017Eislav Kova\u010Devi\u0107"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -23619,7 +25287,7 @@ GameObject:
   - component: {fileID: 1681485843}
   - component: {fileID: 1681485848}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Soga
   m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23640,7 +25308,7 @@ MonoBehaviour:
   trigger: {fileID: 1681485848}
   nameObj: Soga
   id: 1
-  description: Esto es una pistola
+  description: Esto es una soga
   investigado: 0
   highlighted: 0
 --- !u!65 &1681485844
@@ -23713,13 +25381,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681485842}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.92, y: 0, z: 6.52}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1742554, y: 3.4878225, z: 2.4406939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 288563199}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1681485848
 MonoBehaviour:
@@ -23741,9 +25409,11 @@ MonoBehaviour:
     sentencesIdentificacion: []
     turnosIdentificacion: 
     sentences:
-    - anda, una soga
-    - pues si, una soga indeed
-    turnosBasic: 0100000002000000
+    - "Mira esto Mart\xEDnez. Es una soga cortada"
+    - "S\xED, que extra\xF1o "
+    - "\xBFCrees que han podido usar la parte que falta para alguno de los asesinatos?"
+    - "Tal vez deber\xEDamos preguntarle al due\xF1o del albergue sobre ella"
+    turnosBasic: 01000000020000000200000001000000
     sentencesEscopeta: []
     turnosEscopeta: 
     sentecesPistola: []
@@ -24011,7 +25681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1701654201
 MonoBehaviour:
@@ -24692,17 +26362,19 @@ MonoBehaviour:
     turnosHerida: 
     sentencesHoraEstandar:
     - "\xBFA qu\xE9 hora te fuiste a dormir?"
-    - "Me qued\xE9 con Jose Manuel hasta tarde."
+    - "Me qued\xE9 con Jose Manuel hasta tarde"
     - "\xBFHasta qu\xE9 hora?\t"
-    - "Sobre la 1:30, me fui sola.\r Jose Manuel se qued\xF3 un rato m\xE1s."
+    - "Sobre la 1:30, me fui sola.\r Jose Manuel se qued\xF3 un rato m\xE1s"
     - "\xBFFue la \xFAltima vez que le viste?"
-    - "No.\r Chema entr\xF3 a la habitaci\xF3n al rato, pero no lleg\xF3 a acostarse.\r\n"
+    - "No.\r Chema entr\xF3 a la habitaci\xF3n al rato, pero no lleg\xF3 a acostarse\n"
     - "Cuando entr\xF3 a la habitaci\xF3n, son\xF3 un ruido fuerte fuera, Chema se
-      di\xF3 la vuelta y ya no volvi\xF3.\r\n\n"
+      di\xF3 la vuelta y ya no volvi\xF3\n\n"
     - "A m\xED me costaba dormir as\xED que cuando vi que hab\xEDa pasado un rato
-      y no estaba decid\xED levantarme para buscarlo.\r\n\n\n"
-    - "En la sala de estar vi a Don Miguel \xC1ngel entrando desde el patio al albergue."
-    turnosHoraEstandar: 010000000000000001000000000000000100000000000000000000000000000000000000
+      y no estaba decid\xED levantarme para buscarlo\n\n\n"
+    - "En la sala de estar vi a Don Miguel \xC1ngel entrando desde el patio al albergue"
+    - "Un poco m\xE1s tarde fue cuando encontramos el cuerpo de Jose Manuel en la
+      despensa"
+    turnosHoraEstandar: 01000000000000000100000000000000010000000000000000000000000000000000000000000000
     sentencesHoraAna: []
     turnosHoraAna: 
     sentencesHoraJoseManuel: []
@@ -24721,9 +26393,9 @@ MonoBehaviour:
     turnosChusoSotano: 
     sentencesAnaMiguel:
     - "\xBFLlegaste a hablar con Don Miguel \xC1ngel?"
-    - "En la sala de estar me lo cruc\xE9 entrando desde el patio al albergue.\r\n"
-    - "Me dijo que su hermano, Don Francisco, no aparec\xEDa.\r Parec\xEDa muy nervioso.\r\n\n"
-    - "Poco despu\xE9s lleg\xF3 la familia de los propietarios preguntando."
+    - "En la sala de estar me lo cruc\xE9 entrando desde el patio al albergue\n"
+    - "Me dijo que su hermano, Don Francisco, no aparec\xEDa.\r Parec\xEDa muy nervioso.\n\n"
+    - "Poco despu\xE9s lleg\xF3 la familia de los propietarios preguntando"
     turnosAnaMiguel: 01000000000000000000000000000000
     sentencesChaqueta:
     - "\xBFEsta chaqueta es tuya?"
@@ -25830,7 +27502,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -102.7, y: -84.578}
-  m_SizeDelta: {x: 93.0006, y: 22.5556}
+  m_SizeDelta: {x: 200, y: 22.5556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851360919
 MonoBehaviour:
@@ -25872,33 +27544,49 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1851360920}
-  m_Template: {fileID: 1786690924}
-  m_CaptionText: {fileID: 1559025471}
+  m_TargetGraphic: {fileID: 1668658505}
+  m_Template: {fileID: 1111558188}
+  m_CaptionText: {fileID: 761697613}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 10964356}
+  m_ItemText: {fileID: 1191506099}
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: Crucifijo
+    - m_Text: Timoteo Pinheiro
       m_Image: {fileID: 0}
-    - m_Text: Escopeta
+    - m_Text: "Miguel R\xEDos"
       m_Image: {fileID: 0}
-    - m_Text: Soga
+    - m_Text: "Jos\xE9 Rodr\xEDguez"
       m_Image: {fileID: 0}
-    - m_Text: Cuchillo
+    - m_Text: Josefina Esparza
       m_Image: {fileID: 0}
-    - m_Text: Matarratas
+    - m_Text: "Jes\xFAs Manuel Guijarro"
       m_Image: {fileID: 0}
-    - m_Text: Botella
+    - m_Text: "Catalina Mes\xEDas"
       m_Image: {fileID: 0}
-    - m_Text: Accidente
+    - m_Text: "Ana Rinc\xF3n"
       m_Image: {fileID: 0}
-    - m_Text: Cadena
+    - m_Text: "Juan Rinc\xF3n"
+      m_Image: {fileID: 0}
+    - m_Text: "Pedro R\xEDos Esparza"
+      m_Image: {fileID: 0}
+    - m_Text: Maria Isabel Montiel
+      m_Image: {fileID: 0}
+    - m_Text: Jose Manuel Azuaga
+      m_Image: {fileID: 0}
+    - m_Text: "Francisco P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Miguel \xC1ngel P\xE9rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Gonzalo Su\xE1rez"
+      m_Image: {fileID: 0}
+    - m_Text: "Mar\xEDa Jos\xE9 Espinoza"
+      m_Image: {fileID: 0}
+    - m_Text: "Dr\u017Eislav Kova\u010Devi\u0107"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -26371,7 +28059,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1889661519
 MonoBehaviour:
@@ -26389,6 +28077,13 @@ MonoBehaviour:
   - {fileID: 643379837}
   - {fileID: 1681485843}
   - {fileID: 1968951486}
+  - {fileID: 878249698}
+  - {fileID: 63143201}
+  - {fileID: 874949884}
+  - {fileID: 1369728512}
+  - {fileID: 1495393530}
+  - {fileID: 1038783801}
+  - {fileID: 80095954}
   personajes:
   - {fileID: 1161463630}
   - {fileID: 1730441647}
@@ -27683,8 +29378,11 @@ MonoBehaviour:
     sentencesIdentificacion: []
     turnosIdentificacion: 
     sentences:
-    - esto es un cuchillo
-    turnosBasic: 01000000
+    - Esto parece ser el arma del crimen
+    - Tiene pinta
+    - Es un cuchillo de cocina, probablemente del propio albergue
+    - "Es la opci\xF3n m\xE1s l\xF3gica"
+    turnosBasic: 01000000020000000100000002000000
     sentencesEscopeta: []
     turnosEscopeta: 
     sentecesPistola: []
@@ -27756,6 +29454,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.3, z: 0.1}
   m_Center: {x: 0, y: 0.05, z: 0}
+--- !u!4 &1968951491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8e9c0c7787550e94b848f68c0b726834,
+    type: 3}
+  m_PrefabInstance: {fileID: 1152135621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1973803664
 GameObject:
   m_ObjectHideFlags: 0

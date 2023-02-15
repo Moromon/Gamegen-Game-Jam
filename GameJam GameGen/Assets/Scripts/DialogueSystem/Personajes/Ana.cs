@@ -19,7 +19,7 @@ namespace Assets.Scripts.DialogueSystem.Personajes
                 case "Miguel":
                     anaMiguel = true;
                         break;
-                case "Chaqueta":
+                case "Pozo":
                     chaqueta = true;
                     break;
                 default: break;

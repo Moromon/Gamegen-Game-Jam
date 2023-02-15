@@ -15,6 +15,9 @@ namespace Assets.Scripts.DialogueSystem.Personajes
         {
             switch (s)
             {
+                case "Pozo":
+                    chaqueta = true;
+                    break;
                 default: break;
             }
         }
