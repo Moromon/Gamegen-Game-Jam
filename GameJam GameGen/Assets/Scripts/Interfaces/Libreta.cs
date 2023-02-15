@@ -32,15 +32,14 @@ public class Libreta : MonoBehaviour
     public TMP_Dropdown dropDown8;
 
     public int[] soluciones;
-
+    public bool updateLibreta = false;
     public void nextPage()
     {
         if (childActual < maxChild)
         {
-            bool paco = false;
-
+ 
             transform.GetChild(childActual).gameObject.SetActive(false);
-            if (childActual == 0 && !paco)
+            if (childActual == 0 && !updateLibreta)
             { childActual++; }
             childActual++;
             transform.GetChild(childActual).gameObject.SetActive(true);
@@ -62,8 +61,7 @@ public class Libreta : MonoBehaviour
         if (childActual - 1 >= 0)
         {
             transform.GetChild(childActual).gameObject.SetActive(false);
-            bool paco = false;
-            if(childActual == 2 && !paco)
+            if(childActual == 2 && !updateLibreta)
             {
                 childActual--;
             }
