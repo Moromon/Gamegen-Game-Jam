@@ -17,7 +17,7 @@ public class SelectedMagenta : MonoBehaviour
     private void Start()
     {
         _player = GameObject.Find("Player");
-        originalMaterialHighlight = new Material[4];
+        originalMaterialHighlight = new Material[15];
     }
 
     void Update()
@@ -51,7 +51,7 @@ public class SelectedMagenta : MonoBehaviour
                 Vector3 b = new Vector3(_player.transform.position.x, 0, _player.transform.position.z);
                 float distance = Vector3.Distance(a, b);
 
-                if (!highlight.GetComponent<IntObject>().highlighted && distance < 4f)
+                if (!highlight.GetComponent<IntObject>().highlighted && distance < 6f)
                 {
                     if (highlight.childCount == 0)
                     {
