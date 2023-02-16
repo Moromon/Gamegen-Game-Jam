@@ -10,12 +10,17 @@ public class EscenaIntermediaScript : MonoBehaviour
 {
     [TextArea(3, 10)]
     public string[] textosTutorial;
+    public string[] personajes;
+    public int[] turnos;
+
     private int cont = 0;
     public TextMeshProUGUI texto;
+    public TextMeshProUGUI textoPersonajes;
 
     public void Start()
     {
         texto.text = textosTutorial[cont];
+        textoPersonajes.text = personajes[turnos[cont]];
     }
     public void SkipText()
     {
@@ -26,7 +31,8 @@ public class EscenaIntermediaScript : MonoBehaviour
         else if (cont < textosTutorial.Length - 1)
         {
             cont++;
-            texto.text = textosTutorial[cont]; 
+            texto.text = textosTutorial[cont];
+            textoPersonajes.text = personajes[turnos[cont]];
         }
     }
 }

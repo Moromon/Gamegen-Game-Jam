@@ -7,7 +7,7 @@ namespace Assets.Scripts.DialogueSystem.Personajes
     {
         public override void Talk()
         {
-            horaMimirAna = true;
+            horaMimirEstandar = true;
             identificacion = true;
             trigger.TriggerDialogue(this);
 

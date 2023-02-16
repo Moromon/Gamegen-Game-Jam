@@ -1454,6 +1454,18 @@ public class DialogueManager : MonoBehaviour
             {
                 _pedroLLamoActivado = true;
             }
+            if (_personaje.chaqueta)
+            {
+                _chaquetaAna = true;
+            }
+            if (_personaje.chusoSotano)
+            {
+                _chusoSotano = true;
+            }
+            if (_personaje.anaMiguel)
+            {
+                _anaMiguel = true;
+            }
 
             #endregion Muchos ifs
         }
@@ -1462,7 +1474,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueBox.gameObject.SetActive(false);
-        Debug.Log("End of conversation");
         Time.timeScale= 1.0f;
         GameManager.onDialogue = false;
         Cursor.lockState = CursorLockMode.Locked;
